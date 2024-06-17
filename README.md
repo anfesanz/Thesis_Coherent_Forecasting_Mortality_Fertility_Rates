@@ -1,2 +1,2 @@
 # thesis
- Code used in the thesis
+Code used in the thesis. The thesis is composed of the main methodological parts. The population reconstruction (presented in chapter 4) presents a modification of the Speringer (2019) methodology that better illustrates the transitions between years. This methodology consists of using a non-linear extension of the age groups instead of the linear approach presented by Speringer (2019). The methodological part of the forecast of mortality and fertility rates is presented under the framework of hierarchical Bayesian methods.
