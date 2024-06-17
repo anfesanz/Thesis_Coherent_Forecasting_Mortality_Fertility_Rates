@@ -1,0 +1,12 @@
+#!/bin/bash --login
+#$ -cwd
+#$ -pe smp.pe 16
+# Set up to use a specific module, if necessary
+module load apps/binapps/julia/1.10.0
+
+# Inform the application how many cores to use
+export OMP_NUM_THREADS=$NSLOTS
+
+# This job runs "Model 4" beta, kappa and gender coherent model using Julia
+# Adjust the path to Julia if necessary
+julia Code/CSF3Model4.jl

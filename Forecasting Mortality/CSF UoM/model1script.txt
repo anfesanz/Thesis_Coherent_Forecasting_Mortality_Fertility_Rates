@@ -1,0 +1,12 @@
+#!/bin/bash --login
+#$ -cwd
+#$ -pe smp.pe 16
+# Set up to use a specific module, if necessary
+module load apps/binapps/julia/1.10.0
+
+# Inform the application how many cores to use
+export OMP_NUM_THREADS=$NSLOTS
+
+# This job runs "Model 1" Univariate model using Julia
+# Adjust the path to Julia if necessary
+julia Code/CSF3Model1.jl
