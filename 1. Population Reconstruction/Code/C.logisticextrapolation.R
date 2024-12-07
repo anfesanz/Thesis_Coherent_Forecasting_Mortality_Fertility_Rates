@@ -1,25 +1,15 @@
-
-#Extrapolate backward to include the backward Transition Ratio (bTR) in postsecondary education at age 15. Speringer(2019). Page 33
-#In 2018 census use intervals until 100+
-#For surveys extend the interval to 100+
-#Calculate survival ratios and apply it to 2018 census
-#Adjust 2013 backward projection
-
-
 #Extrapolate backward to include the backward Transition Ratio (bTR) in postsecondary education at age 15. Speringer(2019). Page 33
 #popedu_15 is the logistic extrapolation at the age of 15 to estimate the bTR
 ################################################################################
-# Clear the workspace
-rm(list = ls(all = TRUE))  
-# Set the working directory
-setwd("/Users/felipesanchez/Documents/GitHub/PopEdu Reconstruction/")
-# Load user-defined functions
-source("Code/functions.R")
-# Load the required library
-library(tidyverse)
+# # Clear the workspace
+# rm(list = ls(all = TRUE))  
+# # Set the working directory
+# setwd("/Users/felipesanchez/Documents/GitHub/PopEdu Reconstruction/")
+# # Load user-defined functions
+ source("Code/PopRecHF/functions.R")
+# # Load the required library
+# library(tidyverse)
 
-#Read Data and put it in the same format
-popedu <- readRDS("Data Created/popedu.rds") 
 
 #Calculate weights
 popedu_w <- popedu %>%
@@ -48,7 +38,7 @@ popedu_wr <- popedu_w %>%
   group_by(year, reg_aux) %>% # Create index to perfom the regression before 40s and after 40s
   mutate(age_index = row_number()) %>%
   pivot_longer(-c(year, age_group, age_index, reg_aux), names_to = "variable", values_to = "value") %>%#data to long format
-  group_by(year, reg_aux, variable) %>%
+  group_by(variable, year,reg_aux) %>%
   do({
     model = lm(value ~ age_index, data = ., na.action = na.exclude)
     value = ifelse(is.na(.$value), predict(model, newdata = .), .$value)
@@ -64,25 +54,29 @@ popedu_we <- popedu_wr %>%
   mutate(value=logistic(value)) %>% #Inverse transformation
   mutate(variable = str_sub(variable, 2)) %>%#Drop "l"
   separate(variable, into=c("var","sex"), sep="_", remove = TRUE) %>%
-  pivot_wider(names_from = var, values_from = value) %>%
+  pivot_wider(names_from = var, values_from = value) %>% # Be sure that pi1>pi2>pi3 after the interpolation.
+  #mutate(aja = if_else(pi1 > pi2 & pi2 > pi3, "true_case_value", "false_case_value"))
   mutate(
-    edu4 = pi3,
-    edu3 = pi2-edu4,
-    edu2 = pi1-edu3-edu4,
-    edu1 = 1-pi1
+    pi1a = pmax(pi1, pi2),
+    pi2a = pmax(pi2, pi3),
+    pi3a = pmin(pi2, pi3)
+  ) %>%
+  mutate(pi1=pi1a, pi2=pi2a, pi3=pi3a) %>%
+  mutate(
+    edu1 = 1-pi1,
+    edu2 = 1-(edu1 + pi2),
+    edu3 = 1-(edu1 + edu2 + pi3),  
+    edu4 = pi3 
   )  %>% #pi to edu
   mutate(sex=as.numeric(sex), year=as.numeric(year)) %>%
-  select(-c(pi1, pi2, pi3))
+  select(-c(starts_with("pi")))
 
 
 #Convert weigths into population
-popedu_15 <- popedu %>%
+popedu_15_100 <- popedu %>%
   select(-starts_with("edu")) %>%
   left_join(popedu_we) %>%
   mutate(edu1=as.integer(edu1*pop), edu2=as.integer(edu2*pop), edu3=as.integer(edu3*pop), edu4=as.integer(edu4*pop))
-
-#Save information
-saveRDS(popedu_15,  "Data Created/popedu_15.rds")
 
 
 

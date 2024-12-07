@@ -2,11 +2,10 @@
 ########################
 rm(list = ls(all = TRUE)) 
 #Load user-defined functions
-source("Code/functions.R")
+source("Code/PopRecHF/functions.R")
 sredu <- readRDS("Data Created/sredu.rds")
 sredu_hf <- readRDS("Data Created/sredu_hf.rds")
 Census2018_100 <- readRDS("Data Created/Census2018_100.rds")
-
 
 
 #Going Back
@@ -17,7 +16,6 @@ reconstruction_ext <- Census2018_100  %>%
   filter(!(age_group %in% c("5-9", "10-14", "100+"))) %>%
   rowwise() %>% # Calculate weights by row, ensuring the sum of each row is 1
   mutate(across(starts_with("edu"), ~ ./sum(c_across(starts_with("edu"))))) # The backward reconstruction is over the percentages (edu weights)
-
 #Saving the initial data
 rec_hf <- reconstruction_ext
 
@@ -105,4 +103,5 @@ while (baseline_year > 1998) {
 }
 
 saveRDS(rec_hf, "Data Created/rec_hf.rds")
+
 

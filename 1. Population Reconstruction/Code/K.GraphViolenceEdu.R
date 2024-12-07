@@ -32,7 +32,8 @@ rm(list = ls(all = TRUE))
 
 # Set the working directory
 getwd()
-setwd("/Users/felipesanchez/Documents/GitHub/PopEdu Reconstruction/")
+#setwd("/Users/felipesanchez/Documents/GitHub/PopEdu Reconstruction/")
+setwd("/Users/felipesanchez/Documents/UoM/PhD/Phd Second Year/PopEdu Reconstruction/")
 
 # Load libraries
 library(sf)
@@ -42,13 +43,13 @@ library(readxl)
 library(viridis)
 
 # Specify the URL of the Excel file
-excel_url <-"https://www.dane.gov.co/files/censo2018/informacion-tecnica/PERSONAS_DEMOGRAFICO_Cuadros_CNPV_2018.xlsx"
+#excel_url <-"https://www.dane.gov.co/files/censo2018/informacion-tecnica/PERSONAS_DEMOGRAFICO_Cuadros_CNPV_2018.xlsx"
 
 # Define the local file path for downloading the Excel file
 local_file <- "Data Original/PERSONAS_DEMOGRAFICO_Cuadros_CNPV_2018.xlsx"
 
 # Download the Excel file from the DANE website
-download.file(url = excel_url, destfile = local_file, mode = "wb")
+#download.file(url = excel_url, destfile = local_file, mode = "wb")
 
 # Read the downloaded Excel file into R
 data <- read_excel(local_file, sheet = "17PM", skip = 10)
@@ -73,6 +74,9 @@ df <- data %>%
   mutate(pes=edu4/Total, pesw=1/max(pes)*pes, ppsu=edu4/edu1, ppsp=edu4/edu2, pp=(edu4+edu3)/(edu1+edu2)) %>% #percentage with postsecondary education pes, pesw=weighted max to one
   select(id, pes, pesw, ppsu, ppsp, pp, Total, edu1, edu2, edu3, edu4)
 
+
+#what is ppsu? what are x and y axes?? you say it is a proportion but your legend is between 0-ish and 3+??? Text says it is a ratio???
+
 #Belén de Bajirá was part of Riosucio (dane code 27615)
 # Select the row you want to duplicate
 belen <- df %>%
@@ -94,11 +98,50 @@ colombia <- colombia %>%
 # ppsu<-ggplot() +
 #   geom_sf(data = colombia, aes(fill = ppsu)) +
 #   scale_fill_gradient(low = "blue", high = "red") 
-
 ppsu <- ggplot() +
   geom_sf(data = colombia, aes(fill = ppsu)) +
-  scale_fill_viridis_c(option = "cividis")
+  scale_fill_viridis_c(option = "cividis") +
+  labs(
+    fill = "PPSU Ratio",  # Concise label
+    caption = "Source: Census 2018 and CHM. PPSU represents the ratio of postsecondary to no/low education."
+  ) +
+  theme_minimal() +
+  theme(
+    axis.title.x = element_blank(),  # Remove x-axis label
+    axis.title.y = element_blank(),  # Remove y-axis label
+    axis.text.x = element_blank(),   # Remove x-axis numbers
+    axis.text.y = element_blank(),   # Remove y-axis numbers
+    axis.ticks = element_blank(),    # Remove axis ticks
+    panel.background = element_blank(),  # Remove the background
+    plot.background = element_blank()    # Remove plot background
+  )
 
+# Display the plot
+print(ppsu)
+
+ppsu <- ggplot() +
+  geom_sf(data = colombia, aes(fill = ppsu), color = "gray80", size = 0.2) +  # Light gray borders to enhance clarity
+  scale_fill_viridis_c(option = "cividis", direction = -1, breaks = c(1, 2, 3), labels = c("Low", "Medium", "High")) +  # Inverse the cividis palette
+  labs(
+    fill = "PPSU Ratio"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 14),  # Centered and larger title
+    axis.title.x = element_blank(),  # Remove x-axis label
+    axis.title.y = element_blank(),  # Remove y-axis label
+    axis.text.x = element_blank(),   # Remove x-axis numbers
+    axis.text.y = element_blank(),   # Remove y-axis numbers
+    axis.ticks = element_blank(),    # Remove axis ticks
+    panel.background = element_blank(),  # Remove the background
+    plot.background = element_blank(),    # Remove plot background
+    legend.position = "right",  # Ensure legend is on the right
+    legend.title = element_text(size = 10),  # Adjust legend title size
+    legend.text = element_text(size = 8)  # Adjust legend text size
+  )
+
+# Display the plot
+print(ppsu)
 
 #Victims Armed conflict Colombia
 ################################
@@ -198,8 +241,30 @@ colombia <- colombia %>%
 #   scale_fill_gradient(low = "blue", high = "red")
 
 vpt <- ggplot() +
-  geom_sf(data = colombia, aes(fill = vpt)) +
-  scale_fill_viridis_c(option = "cividis")
+  geom_sf(data = colombia, aes(fill = vpt), color = "gray60", size = 0.3) +  # Slightly darker borders for clarity
+  scale_fill_viridis_c(option = "cividis", direction = -1, 
+                       breaks = c(0, 0.05, 0.1, 0.15, 0.20), 
+                       labels = c("Very Low", "Low", "Medium", "High", "Very High")) +  # Custom breaks for better differentiation
+  labs(
+    fill = "VPT Ratio"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 14),  # Centered and larger title
+    axis.title.x = element_blank(),  # Remove x-axis label
+    axis.title.y = element_blank(),  # Remove y-axis label
+    axis.text.x = element_blank(),   # Remove x-axis numbers
+    axis.text.y = element_blank(),   # Remove y-axis numbers
+    axis.ticks = element_blank(),    # Remove axis ticks
+    panel.background = element_blank(),  # Remove the background
+    plot.background = element_blank(),   # Remove plot background
+    legend.position = "right",  # Ensure legend is on the right
+    legend.title = element_text(size = 10),  # Adjust legend title size
+    legend.text = element_text(size = 8)  # Adjust legend text size
+  )
+
+# Display the plot
+print(vpt)
 
 #Saving graphs
 

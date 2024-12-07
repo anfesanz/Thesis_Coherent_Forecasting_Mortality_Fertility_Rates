@@ -1,5 +1,5 @@
 rm(list = ls(all = TRUE))  # Clear the workspace
-setwd("/Users/felipesanchez/Documents/GitHub/PopEdu Reconstruction")
+setwd("/Users/felipesanchez/Documents/UoM/PhD/Phd Second Year/PopEdu Reconstruction/")
 
 #Call packages
 library(tidyverse)

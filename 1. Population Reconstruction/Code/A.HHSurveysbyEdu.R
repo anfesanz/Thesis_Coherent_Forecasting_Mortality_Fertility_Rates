@@ -22,12 +22,12 @@ rm(list = ls(all = TRUE))
 
 # Set the working directory
 getwd()
-setwd("/Users/felipesanchez/Documents/GitHub/PopEdu Reconstruction/")
+setwd("/Users/felipesanchez/Documents/UoM/PhD/Phd Second Year/PopEdu Reconstruction/")
 
 
 #install.packages("haven")
-library(haven)
-library(tidyverse)
+#library(haven)
+#library(tidyverse)
 
 
 ################################################################################

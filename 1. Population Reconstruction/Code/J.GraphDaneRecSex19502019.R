@@ -25,7 +25,7 @@ rm(list = ls(all = TRUE))
 
 # Set the working directory
 getwd()
-setwd("/Users/felipesanchez/Documents/GitHub/PopEdu Reconstruction/")
+setwd("/Users/felipesanchez/Documents/UoM/PhD/Phd Second Year/PopEdu Reconstruction/")
 
 # Load libraries
 library(tidyverse)

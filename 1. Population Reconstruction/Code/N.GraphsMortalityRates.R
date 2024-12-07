@@ -23,7 +23,7 @@ rm(list = ls(all = TRUE))  # Clear the workspace
 # # Working directory
 # getwd()
 # #setwd("/Users/felipesanchez/Library/CloudStorage/Dropbox-Personal/UoM/UoM from MA/Mortality by Education/")
- setwd("/Users/felipesanchez/Documents/GitHub/PopEdu Reconstruction")
+ setwd("/Users/felipesanchez/Documents/UoM/PhD/Phd Second Year/PopEdu Reconstruction/")
 # 
 # #Call packages
  library(tidyverse)

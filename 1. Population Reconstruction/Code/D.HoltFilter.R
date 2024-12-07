@@ -2,17 +2,15 @@
 #popedu_15 is the logistic extrapolation at the age of 15 to estimate the bTR
 ################################################################################
 # # Clear the workspace
-# rm(list = ls(all = TRUE))  
+ rm(list = ls(all = TRUE))
 # # Set the working directory
-# setwd("/Users/felipesanchez/Documents/GitHub/PopEdu Reconstruction/")
+ setwd("/Users/felipesanchez/Documents/UoM/PhD/Phd Second Year/PopEdu Reconstruction/")
 # # Load user-defined functions
-# source("Code/functions.R")
+ source("Code/PopRecHF/functions.R")
 # # Load the required library
-# library(tidyverse)
+ library(tidyverse)
 
-#Read Data and put it in the same format
-popedu <- readRDS("Data Created/popedu.rds") 
-
+popedu <- readRDS("Data Created/popedu.rds")
 #Calculate weights
 popedu_w <- popedu %>%
   filter(str_detect(age_group, "^(1[5-9]|[2-9][0-9])")) %>% # Excluding ages bellow 15
@@ -31,28 +29,39 @@ popedu_w <- popedu %>%
   pivot_wider(names_from = sex, values_from = c(lpi1, lpi2, lpi3), names_sep = "_") %>%
   mutate(across(everything(), ~replace(., is.infinite(.), NA)))
 
-#Performing the regression to estimate NAs (edu4 at age 15)
-popedu_wr <- popedu_w %>%
-  group_by(year)  %>% #reg_aux help me to do regression in educational ages (under 40 years) and off of educational ages (above 40 years)
-  mutate(reg_aux = case_when(age_group %in% c('15-19', '20-24', '25-29', '30-34', '35-39') ~ 1,
-    TRUE ~ 2
-  ))  %>%
-  group_by(year, reg_aux) %>% # Create index to perfom the regression before 40s and after 40s
-  mutate(age_index = row_number()) %>%
-  pivot_longer(-c(year, age_group, age_index, reg_aux), names_to = "variable", values_to = "value") %>%#data to long format
-  group_by(year, reg_aux, variable) %>%
-  do({
-    model = lm(value ~ age_index, data = ., na.action = na.exclude)
-    value = ifelse(is.na(.$value), predict(model, newdata = .), .$value)
-    data.frame(., value)
-  }) %>%
-  ungroup()
+#Save Population weighted 
+saveRDS(popedu_w, "Data Created/popedu_w.rds")
 
-saveRDS(popedu_wr, "Data Created/popedu_wr_100.rds")
+# And now... My methodology!!
+#Holt extrapolation. Weighted Reconstruction (wr)
+popedu_wr <- readRDS("Data Created/popedu_w.rds") %>%
+  filter(age_group %in% c('40-44', '45-49', '50-54', '55-59', '60-64', '65-69', '70-74', '75-79', '80-84', '85-89', '90-94', '95-99'), year != 2018) %>%
+  pivot_wider(names_from = year, values_from = matches("^lp")) %>%
+  mutate(age_index = row_number()) %>% 
+  mutate(across(starts_with("lpi"), ~ ifelse(age_index %in% c(10, 11, 12), forecast::forecast(forecast::holt(.), h = 3)$mean, .))) %>%
+  select(-starts_with("ts"), -age_index) %>%
+  pivot_longer(cols = -age_group, 
+               names_to = c(".value", "year"), 
+               names_pattern = "(.*)_(\\d{4})$") %>%
+  mutate(year=as.numeric(year)) 
+# Come back to the previous format
+popedu_wr_aux <- readRDS("Data Created/popedu_wr_100.rds") %>%
+  filter(!age_group %in% c('40-44', '45-49', '50-54', '55-59', '60-64', '65-69', '70-74', '75-79', '80-84', '85-89', '90-94', '95-99') & year != 2018) %>%
+  select(-value, -reg_aux, -age_index) %>%
+  pivot_wider(names_from = variable, values_from = value.1)
+
+popedu_wr_aux2 <- readRDS("Data Created/popedu_wr_100.rds") %>%
+  filter(year == 2018) %>%
+  select(-value, -reg_aux, -age_index) %>%
+  pivot_wider(names_from = variable, values_from = value.1)
+
+popedu_wr_hf <- bind_rows(popedu_wr, popedu_wr_aux)
+popedu_wr_hf <- bind_rows(popedu_wr, popedu_wr_aux2)
+
+rm(popedu_wr_aux, popedu_wr_aux2)
 
 #Population weithed with the estimation
-popedu_we <- popedu_wr %>%
-  pivot_wider(-c(value, reg_aux, age_index), names_from = "variable", values_from = "value.1") %>%
+popedu_we_hf <- popedu_wr_hf %>%
   pivot_longer(-c(year, age_group), names_to = "variable", values_to = "value") %>%
   mutate(value=logistic(value)) %>% #Inverse transformation
   mutate(variable = str_sub(variable, 2)) %>%#Drop "l"
@@ -69,9 +78,9 @@ popedu_we <- popedu_wr %>%
 
 
 #Convert weigths into population
-popedu_15_100 <- popedu %>%
+popedu_15_100hf <- popedu %>%
   select(-starts_with("edu")) %>%
-  left_join(popedu_we) %>%
+  left_join(popedu_we_hf) %>%
   mutate(edu1=as.integer(edu1*pop), edu2=as.integer(edu2*pop), edu3=as.integer(edu3*pop), edu4=as.integer(edu4*pop))
 
 

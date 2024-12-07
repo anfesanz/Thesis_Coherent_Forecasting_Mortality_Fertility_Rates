@@ -5,7 +5,7 @@
 # #Read the information
 popedu_rec <- readRDS("Data Created/popedu_rec.rds")
 popedu_rec_hf <- readRDS("Data Created/popedu_rec_hf.rds")
-load("/Users/felipesanchez/Library/CloudStorage/Dropbox-Personal/UoM/UoM from MA/Mortality by Education/Data Created/MortalityColDebugged.RData")
+load("/Users/felipesanchez/Documents/UoM/PhD/Phd Third Year/Chapter Mortality/ModellingM/Data Original/MortalityColDebugged.RData")
 
 deathedu <- as.tibble(Defun) %>%
   rename(death=dead) %>%

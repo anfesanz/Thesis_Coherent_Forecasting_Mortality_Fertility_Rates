@@ -20,7 +20,7 @@ rm(list = ls(all = TRUE))  # Clear the workspace
 # Working directory
 getwd()
 #setwd("/Users/felipesanchez/Library/CloudStorage/Dropbox-Personal/UoM/UoM from MA/Mortality by Education/")
-setwd("/Users/felipesanchez/Documents/GitHub/PopEdu Reconstruction")
+setwd("/Users/felipesanchez/Documents/UoM/PhD/Phd Second Year/PopEdu Reconstruction/")
 
 #Call packages
 library(tidyverse)
@@ -78,47 +78,151 @@ popedu_graph_w_all_years_m <- popedu_graph_w %>%
     cols = starts_with("lpi"),
     names_to = "lpi",
     values_to = "value"
-  ) %>% 
-  ggplot(mapping = aes(x = age_group, y = value, color = as.factor(year), linetype = lpi, group = interaction(year, lpi))) +
+  ) %>%
+  ggplot(mapping = aes(
+    x = age_group, y = value, color = as.factor(year), 
+    linetype = lpi, group = interaction(year, lpi)
+  )) +
   geom_line() +
-  labs(x = "Age Group", y = "Logit Transformation of pi", color = "Year", linetype = "LPI (Males)") +
-  scale_color_manual(values = c("1998" = "lightgreen", 
-                                "2003" = "lightblue", 
-                                "2008" = "dodgerblue", 
-                                "2013" = "darkorchid", 
-                                "2018" = "darkred")) +
+  labs(
+    x = "Age Group",
+    y = expression(Logit~pi["x,t"]^{"s,e"}),  # Fixing superscript with a comma
+    color = "Year",
+    linetype = expression(Logit~pi^{"s=M,e"}~by~education~(Males))
+  ) +
+  scale_color_manual(values = c(
+    "1998" = "lightgreen",
+    "2003" = "lightblue",
+    "2008" = "dodgerblue",
+    "2013" = "darkorchid",
+    "2018" = "darkred"
+  )) +
+  scale_linetype_manual(
+    labels = c(
+      expression(Logit~pi^{"e=0"}),
+      expression(Logit~pi^{"e=1"}),
+      expression(Logit~pi^{"e=2"})
+    ),
+    values = c("solid", "dotted", "dashed")
+  ) +
   theme(
     axis.text.x = element_text(angle = 45, hjust = 1),
     panel.background = element_blank(), # Removes background
-    plot.background = element_blank()  # Removes background
+    plot.background = element_blank()   # Removes background
   )
 
 print(popedu_graph_w_all_years_m)
-ggsave("Output/popedu_graph_lp_m.png", device = "png")
-dev.off()
 
+
+
+library(gridExtra)  # For arranging plots side by side
+
+# Common settings for both plots
+common_theme <- theme(
+  axis.text.x = element_text(angle = 45, hjust = 1),
+  panel.background = element_blank(),  # Removes background
+  plot.background = element_blank(),   # Removes background
+  panel.grid.major = element_line(color = "gray90"),  # Soft grid
+  panel.grid.minor = element_line(color = "gray95"),  # Softer grid
+  legend.position = "bottom",  # Move legend below the graph
+  legend.text = element_text(size = 8),  # Reduce legend text size
+  legend.key.size = unit(0.5, "cm"),  # Reduce legend key size
+  aspect.ratio = 2 / 5  # Widen the graph
+)
+
+# Plot for Males
+popedu_graph_w_all_years_m <- popedu_graph_w %>%
+  filter(sex == 1) %>%
+  pivot_longer(
+    cols = starts_with("lpi"),
+    names_to = "lpi",
+    values_to = "value"
+  ) %>%
+  ggplot(mapping = aes(
+    x = age_group, y = value, color = as.factor(year), 
+    linetype = lpi, group = interaction(year, lpi)
+  )) +
+  geom_line() +
+  labs(
+    x = "Age Group",
+    y = expression(Logit~pi["x,t"]^{"s,e"}),  # Fixing superscript with a comma
+    color = "Year",
+    linetype = expression(Logit~pi^{"s=M,e"}~by~education)
+  ) +
+  scale_x_discrete(
+    labels = function(x) {
+      ifelse(x == "80-84", "80-84 or 80+", 
+             ifelse(x == "95-99", "95+", x))  # Modify "95-99" to "95+"
+    }
+  ) +
+  scale_color_manual(values = c(
+    "1998" = "lightgreen",
+    "2003" = "lightblue",
+    "2008" = "dodgerblue",
+    "2013" = "darkorchid",
+    "2018" = "darkred"
+  )) +
+  scale_linetype_manual(
+    labels = c(
+      expression(Logit~pi^{"e=0"}),
+      expression(Logit~pi^{"e=1"}),
+      expression(Logit~pi^{"e=2"})
+    ),
+    values = c("solid", "dotted", "dashed")
+  ) +
+  common_theme
+
+# Plot for Females
 popedu_graph_w_all_years_f <- popedu_graph_w %>%
   filter(sex == 2) %>%
   pivot_longer(
     cols = starts_with("lpi"),
     names_to = "lpi",
     values_to = "value"
-  ) %>% 
-  ggplot(mapping = aes(x = age_group, y = value, color = as.factor(year), linetype = lpi, group = interaction(year, lpi))) +
+  ) %>%
+  ggplot(mapping = aes(
+    x = age_group, y = value, color = as.factor(year), 
+    linetype = lpi, group = interaction(year, lpi)
+  )) +
   geom_line() +
-  labs(x = "Age Group", y = "Logit Transformation of pi", color = "Year", linetype = "LPI (Females)") +
-  scale_color_manual(values = c("1998" = "lightgreen", 
-                                "2003" = "lightblue", 
-                                "2008" = "dodgerblue", 
-                                "2013" = "darkorchid", 
-                                "2018" = "darkred")) +
-  theme(
-    axis.text.x = element_text(angle = 45, hjust = 1),
-    panel.background = element_blank(), # Removes background
-    plot.background = element_blank()  # Removes background
-  )
+  labs(
+    x = "Age Group",
+    y = expression(Logit~pi["x,t"]^{"s,e"}),  # Fixing superscript with a comma
+    color = "Year",
+    linetype = expression(Logit~pi^{"s=F,e"}~by~education)
+  ) +
+  scale_x_discrete(
+    labels = function(x) {
+      ifelse(x == "80-84", "80-84 or 80+", 
+             ifelse(x == "95-99", "95+", x))  # Modify "95-99" to "95+"
+    }
+  ) +
+  scale_color_manual(values = c(
+    "1998" = "lightgreen",
+    "2003" = "lightblue",
+    "2008" = "dodgerblue",
+    "2013" = "darkorchid",
+    "2018" = "darkred"
+  )) +
+  scale_linetype_manual(
+    labels = c(
+      expression(Logit~pi^{"e=0"}),
+      expression(Logit~pi^{"e=1"}),
+      expression(Logit~pi^{"e=2"})
+    ),
+    values = c("solid", "dotted", "dashed")
+  ) +
+  common_theme
 
+
+print(popedu_graph_w_all_years_m)
 print(popedu_graph_w_all_years_f)
+
+
+ggsave("Output/popedu_graph_lp_m.png", device = "png")
+dev.off()
+
+
 ggsave("Output/popedu_graph_lp_f.png", device = "png")
 dev.off()
 
