@@ -1,25 +1,21 @@
 # Complete_CRPS_Workflow.R
 # Demonstrates full pipeline from Julia-like output to CRPS evaluation
+# This Script responds the reviews request to do an assessment of forecast distributions.
+# See Gneiting and Raftery (2004); Gneiting and Raftery (2008).  
 
-#This are the post of the models (in Julia)
+#This are the posterior draws of the models (in Julia)
 #chain_model1f1.jls
 #chain_model1f2.jls
 #chain_model1f3.jls
 #chain_model1f4.jls
-
-
 #chain_model1m1.jls
 #chain_model1m2.jls
 #chain_model1m3.jls
 #chain_model1m4.jls
-
-
 #chain_model2f.jls
 #chain_model2m.jls
-
 #chain_model3f.jls
 #chain_model3m.jls
-
 #chain_model4.jls
 
 
@@ -151,6 +147,81 @@ build_named_draw_matrix <- function(chain_df, base_name, n_age = 11, n_year = 21
   }
 
   draw_matrix
+}
+
+summarize_predictive_draws <- function(draw_matrix, observed_matrix) {
+  n_age <- nrow(observed_matrix)
+  n_year <- ncol(observed_matrix)
+
+  summary_df <- data.frame(
+    cell_id = seq_len(nrow(draw_matrix)),
+    age = rep(seq_len(n_age), each = n_year),
+    year = rep(seq_len(n_year), times = n_age),
+    observed = as.vector(t(as.matrix(observed_matrix))),
+    mean = apply(draw_matrix, 1, mean),
+    median = apply(draw_matrix, 1, median),
+    sd = apply(draw_matrix, 1, sd),
+    lower50 = apply(draw_matrix, 1, quantile, probs = 0.25),
+    upper50 = apply(draw_matrix, 1, quantile, probs = 0.75),
+    lower95 = apply(draw_matrix, 1, quantile, probs = 0.025),
+    upper95 = apply(draw_matrix, 1, quantile, probs = 0.975)
+  )
+
+  summary_df$interval95_width <- summary_df$upper95 - summary_df$lower95
+  summary_df
+}
+
+plot_uncertainty_ribbons <- function(summary_df, age_indices, title_text) {
+  ribbon_df <- summary_df[summary_df$age %in% age_indices, ]
+  ribbon_df$age_label <- factor(
+    ribbon_df$age,
+    levels = age_indices,
+    labels = paste("Age group", age_indices)
+  )
+
+  ggplot(ribbon_df, aes(x = year)) +
+    geom_ribbon(aes(ymin = lower95, ymax = upper95), fill = "#9ecae1", alpha = 0.35) +
+    geom_ribbon(aes(ymin = lower50, ymax = upper50), fill = "#3182bd", alpha = 0.5) +
+    geom_line(aes(y = median), color = "#08519c", linewidth = 0.7) +
+    geom_point(aes(y = observed), color = "#cb181d", size = 1.2) +
+    facet_wrap(~ age_label, ncol = 1, scales = "free_y") +
+    labs(
+      title = title_text,
+      x = "Year index",
+      y = "Log mortality rate"
+    ) +
+    theme_minimal()
+}
+
+plot_uncertainty_heatmap <- function(summary_df, title_text) {
+  ggplot(summary_df, aes(x = year, y = age, fill = interval95_width)) +
+    geom_tile() +
+    scale_fill_gradient(low = "#f7fbff", high = "#08306b") +
+    labs(
+      title = title_text,
+      x = "Year index",
+      y = "Age index",
+      fill = "95% interval\nwidth"
+    ) +
+    theme_minimal()
+}
+
+plot_predictive_density <- function(draw_matrix, observed_matrix, age_index, year_index, title_text) {
+  n_year <- ncol(observed_matrix)
+  cell_index <- (age_index - 1) * n_year + year_index
+  density_df <- data.frame(draw = draw_matrix[cell_index, ])
+  observed_value <- observed_matrix[age_index, year_index]
+
+  ggplot(density_df, aes(x = draw)) +
+    geom_density(fill = "#6baed6", alpha = 0.55, color = "#08519c") +
+    geom_vline(xintercept = observed_value, color = "#cb181d", linewidth = 0.9) +
+    labs(
+      title = title_text,
+      subtitle = sprintf("Age index %d, year index %d", age_index, year_index),
+      x = "Posterior predictive draws",
+      y = "Density"
+    ) +
+    theme_minimal()
 }
 
 
@@ -494,3 +565,232 @@ table_to_latex <- c(
 )
 
 writeLines(table_to_latex, "summary_mean_crps.tex")
+
+
+
+
+#Fertility
+##########
+actuals_fxf1 <- as.vector(as.matrix(fxf1))
+forecast_fertility_draws_f1_mod1 <- build_logmu_draw_matrix(f_model1f1, n_age = 6, n_year = 21)
+crps_fertility_f1_mod1 <- crps_sample(y = actuals_fxf1, dat = forecast_fertility_draws_f1_mod1)
+forecast_fertility_draws_f1_mod2 <- build_named_draw_matrix(f_model2f, base_name = "logmu1", n_age = 6, n_year = 21)
+crps_fertility_f1_mod2 <- crps_sample(y = actuals_fxf1, dat = forecast_fertility_draws_f1_mod2)
+forecast_fertility_draws_f1_mod3 <- build_named_draw_matrix(f_model3f, base_name = "logmu1", n_age = 6, n_year = 21)
+crps_fertility_f1_mod3 <- crps_sample(y = actuals_fxf1, dat = forecast_fertility_draws_f1_mod3)
+
+crps_fxf1 <- data.frame(
+  Model = c("f1_mod1", "f1_mod2", "f1_mod3"),
+  Mean_CRPS = c(
+    mean(crps_fertility_f1_mod1),
+    mean(crps_fertility_f1_mod2),
+    mean(crps_fertility_f1_mod3)
+  ),
+  Median_CRPS = c(
+    median(crps_fertility_f1_mod1),
+    median(crps_fertility_f1_mod2),
+    median(crps_fertility_f1_mod3)
+  ),
+  SD_CRPS = c(
+    sd(crps_fertility_f1_mod1),
+    sd(crps_fertility_f1_mod2),
+    sd(crps_fertility_f1_mod3)
+  )
+)
+print("=== CRPS for fxf1 across fertility models ===")
+print(crps_fxf1)
+
+actuals_fxf2 <- as.vector(as.matrix(fxf2))
+forecast_fertility_draws_f2_mod1 <- build_logmu_draw_matrix(f_model1f2, n_age = 6, n_year = 21)
+crps_fertility_f2_mod1 <- crps_sample(y = actuals_fxf2, dat = forecast_fertility_draws_f2_mod1)
+forecast_fertility_draws_f2_mod2 <- build_named_draw_matrix(f_model2f, base_name = "logmu2", n_age = 6, n_year = 21)
+crps_fertility_f2_mod2 <- crps_sample(y = actuals_fxf2, dat = forecast_fertility_draws_f2_mod2)
+forecast_fertility_draws_f2_mod3 <- build_named_draw_matrix(f_model3f, base_name = "logmu2", n_age = 6, n_year = 21)
+crps_fertility_f2_mod3 <- crps_sample(y = actuals_fxf2, dat = forecast_fertility_draws_f2_mod3)
+
+crps_fxf2 <- data.frame(
+  Model = c("f2_mod1", "f2_mod2", "f2_mod3"),
+  Mean_CRPS = c(
+    mean(crps_fertility_f2_mod1),
+    mean(crps_fertility_f2_mod2),
+    mean(crps_fertility_f2_mod3)
+  ),
+  Median_CRPS = c(
+    median(crps_fertility_f2_mod1),
+    median(crps_fertility_f2_mod2),
+    median(crps_fertility_f2_mod3)
+  ),
+  SD_CRPS = c(
+    sd(crps_fertility_f2_mod1),
+    sd(crps_fertility_f2_mod2),
+    sd(crps_fertility_f2_mod3)
+  )
+)
+print("=== CRPS for fxf2 across fertility models ===")
+print(crps_fxf2)
+
+actuals_fxf3 <- as.vector(as.matrix(fxf3))
+forecast_fertility_draws_f3_mod1 <- build_logmu_draw_matrix(f_model1f3, n_age = 6, n_year = 21)
+crps_fertility_f3_mod1 <- crps_sample(y = actuals_fxf3, dat = forecast_fertility_draws_f3_mod1)
+forecast_fertility_draws_f3_mod2 <- build_named_draw_matrix(f_model2f, base_name = "logmu3", n_age = 6, n_year = 21)
+crps_fertility_f3_mod2 <- crps_sample(y = actuals_fxf3, dat = forecast_fertility_draws_f3_mod2)
+forecast_fertility_draws_f3_mod3 <- build_named_draw_matrix(f_model3f, base_name = "logmu3", n_age = 6, n_year = 21)
+crps_fertility_f3_mod3 <- crps_sample(y = actuals_fxf3, dat = forecast_fertility_draws_f3_mod3)
+
+crps_fxf3 <- data.frame(
+  Model = c("f3_mod1", "f3_mod2", "f3_mod3"),
+  Mean_CRPS = c(
+    mean(crps_fertility_f3_mod1),
+    mean(crps_fertility_f3_mod2),
+    mean(crps_fertility_f3_mod3)
+  ),
+  Median_CRPS = c(
+    median(crps_fertility_f3_mod1),
+    median(crps_fertility_f3_mod2),
+    median(crps_fertility_f3_mod3)
+  ),
+  SD_CRPS = c(
+    sd(crps_fertility_f3_mod1),
+    sd(crps_fertility_f3_mod2),
+    sd(crps_fertility_f3_mod3)
+  )
+)
+print("=== CRPS for fxf3 across fertility models ===")
+print(crps_fxf3)
+
+actuals_fxf4 <- as.vector(as.matrix(fxf4))
+forecast_fertility_draws_f4_mod1 <- build_logmu_draw_matrix(f_model1f4, n_age = 6, n_year = 21)
+crps_fertility_f4_mod1 <- crps_sample(y = actuals_fxf4, dat = forecast_fertility_draws_f4_mod1)
+forecast_fertility_draws_f4_mod2 <- build_named_draw_matrix(f_model2f, base_name = "logmu4", n_age = 6, n_year = 21)
+crps_fertility_f4_mod2 <- crps_sample(y = actuals_fxf4, dat = forecast_fertility_draws_f4_mod2)
+forecast_fertility_draws_f4_mod3 <- build_named_draw_matrix(f_model3f, base_name = "logmu4", n_age = 6, n_year = 21)
+crps_fertility_f4_mod3 <- crps_sample(y = actuals_fxf4, dat = forecast_fertility_draws_f4_mod3)
+
+crps_fxf4 <- data.frame(
+  Model = c("f4_mod1", "f4_mod2", "f4_mod3"),
+  Mean_CRPS = c(
+    mean(crps_fertility_f4_mod1),
+    mean(crps_fertility_f4_mod2),
+    mean(crps_fertility_f4_mod3)
+  ),
+  Median_CRPS = c(
+    median(crps_fertility_f4_mod1),
+    median(crps_fertility_f4_mod2),
+    median(crps_fertility_f4_mod3)
+  ),
+  SD_CRPS = c(
+    sd(crps_fertility_f4_mod1),
+    sd(crps_fertility_f4_mod2),
+    sd(crps_fertility_f4_mod3)
+  )
+)
+print("=== CRPS for fxf4 across fertility models ===")
+print(crps_fxf4)
+
+
+
+model_labels <- c("Model A", "Model B", "Model C")
+
+mean_crps <- cbind(
+  crps_fxf1$Mean_CRPS,
+  crps_fxf2$Mean_CRPS,
+  crps_fxf3$Mean_CRPS,
+  crps_fxf4$Mean_CRPS
+)
+
+summary_mean_crps_fertility <- data.frame(
+  Model = model_labels,
+  CRPS_Females = rowMeans(mean_crps)
+)
+
+print("=== Mean CRPS by Model and Sex ===")
+print(summary_mean_crps_fertility)
+
+table_to_latex_fertility <- function(summary_df) {
+  table_rows <- vapply(
+    seq_len(nrow(summary_df)),
+    function(i) {
+      sprintf(
+        "%s & %.6f \\\\",
+        summary_df$Model[i],
+        summary_df$CRPS_Females[i]
+      )
+    },
+    character(1)
+  )
+
+  c(
+    "\\begin{table}[ht]",
+    "\\centering",
+    "\\begin{tabular}{lr}",
+    "\\hline",
+    "Model & CRPS \\\\",
+    "\\hline",
+    table_rows,
+    "\\hline",
+    "\\end{tabular}",
+    "\\caption{Mean CRPS by model}",
+    "\\label{tab:mean_crps_fertility}",
+    "\\end{table}"
+  )
+}
+
+writeLines(
+  table_to_latex_fertility(summary_mean_crps_fertility),
+  "summary_mean_crps_fertility.tex"
+)
+
+
+# Uncertainty displays for thesis plots
+
+
+plot_output_dir <- "../results/thesis_plots"
+dir.create(plot_output_dir, recursive = TRUE, showWarnings = FALSE)
+
+mxf1_mod1_summary <- summarize_predictive_draws(
+  draw_matrix = forecast_draws_f1_mod1,
+  observed_matrix = as.matrix(mxf1)
+)
+
+ribbon_plot_mxf1_mod1 <- plot_uncertainty_ribbons(
+  summary_df = mxf1_mod1_summary,
+  age_indices = c(2, 6, 10),
+  title_text = "Predictive uncertainty bands for mortality females without formal education, Model A"
+)
+
+heatmap_plot_mxf1_mod1 <- plot_uncertainty_heatmap(
+  summary_df = mxf1_mod1_summary,
+  title_text = "Width of 95% predictive intervals for mortality females without formal education, Model A"
+)
+
+density_plot_mxf1_mod1 <- plot_predictive_density(
+  draw_matrix = forecast_draws_f1_mod1,
+  observed_matrix = as.matrix(mxf1),
+  age_index = 6,
+  year_index = 21,
+  title_text = "Posterior predictive density for a selected mortality 50-54 year group and year (2018), Model A (Truncated data for evaluation)"
+)
+
+ggsave(
+  filename = file.path(plot_output_dir, "mxf1_model1_uncertainty_ribbons.png"),
+  plot = ribbon_plot_mxf1_mod1,
+  width = 8,
+  height = 9,
+  dpi = 300
+)
+
+ggsave(
+  filename = file.path(plot_output_dir, "mxf1_model1_uncertainty_heatmap.png"),
+  plot = heatmap_plot_mxf1_mod1,
+  width = 8,
+  height = 5,
+  dpi = 300
+)
+
+ggsave(
+  filename = file.path(plot_output_dir, "mxf1_model1_density_selected_cell.png"),
+  plot = density_plot_mxf1_mod1,
+  width = 8,
+  height = 5,
+  dpi = 300
+)
