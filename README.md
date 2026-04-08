@@ -1,13 +1,34 @@
-# thesis
-This thesis is about forecasting mortality and fertility rates, not understanding how conflict affects education. The core hypothesis is that education must be included in these forecasts, as it significantly influences both mortality and fertility rates. Education's impact extends beyond demographics, affecting the labour market and other variables that indirectly shape mortality and fertility.
+# Demographic Estimation & Forecasting Under Data Constraints
 
- This integration of education is particularly crucial in conflict forecasting, as the effects of conflict vary depending on an individual's educational attainment. However, incorporating education poses challenges due to the poor quality and availability of data in conflict settings.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Recognizing that both fertility and mortality rates are influenced by education and gender, this thesis emphasizes the necessity of forecasting these rates separately for different educational and gender groups to ensure accurate and comprehensive predictions.
+This repository implements an integrated statistical framework for reconstructing historical population dynamics and producing coherent forecasts of mortality and fertility when conventional demographic methods are infeasible due to fragmented, inconsistent, or incomplete data. The methods are demonstrated using **Colombia** as a case study – a country shaped by prolonged internal conflict and marked educational inequalities – but are designed to be transferable to other middle‑income settings.
 
-Research questions:
-	1.	How have mortality and fertility rates in Colombia changed between 1998 and 2018, considering educational level and gender?
-	2.	How has Colombia’s population composition changed by educational level and gender between 1998 and 2018?
-	3.	Among Lee-Carter Bayesian hierarchical models, which configuration offers the most accurate and coherent results: a coherent setup or a non-coherent setup?
 
-This repository presents the code used in the thesis. The population reconstruction (presented in chapter 4) presents a modification of the Speringer (2019) methodology that better illustrates the transitions between years. This methodology consists of using a non-linear extension of the age groups instead of the linear approach presented by Speringer (2019). The methodological part of the forecast of mortality and fertility rates is presented under the framework of hierarchical Bayesian methods (extension of the Wisniowski(2015) models).
+## Overview
+Reliable demographic estimates are critical for effective social policy. However, in many middle income countries these estimates are undermined by fragmented, inconsistent, and incomplete data systems. This repository contains the code and methodological implementation developed to reconstruct historical population dynamics and produce coherent forecasts of mortality and fertility under severe data constraints. Using Colombia as a case study, the framework addresses the challenge of estimating demographic processes simultaneously by age, sex, and educational attainment when conventional demographic methods are infeasible.
+
+The approach integrates demographic accounting, smoothing techniques, and coherent Bayesian models to resolve fundamental problems of data inconsistency, circular dependence, and instability in subpopulation estimates. The workflow is organised into four main components, each corresponding to a folder in this repository.
+
+## Repository Structure
+
+### 1. Population Reconstruction  
+**Method:** Multistage Holt Filter Adaptation  
+
+This folder contains the implementation used to reconstruct internally consistent population counts between censuses. The method embeds an exponential smoothing filter within a multistate cohort component framework to reconcile inconsistencies across demographic inputs. The procedure produces a complete historical population series disaggregated by single year of age, sex, and four educational groups.
+
+### 2. Forecasting Mortality  
+**Method:** Bayesian Hierarchical Coherent Lee Carter  
+
+This folder implements a hierarchical Bayesian extension of the Lee Carter model for mortality forecasting across educational groups. The framework enforces coherence in age and period effects while allowing structured variation between groups. Estimation is performed using Hamiltonian Monte Carlo, producing probabilistic mortality forecasts with internally consistent uncertainty across subpopulations and the total population.
+
+### 3. Forecasting Fertility  
+**Method:** Bayesian Hierarchical Coherent Lee Carter  
+
+This folder contains the implementation of a coherent Bayesian model for forecasting fertility rates by educational attainment. The approach follows a hierarchical Lee Carter type structure that ensures coherence between subgroup and aggregate fertility patterns while allowing group specific dynamics.
+
+### 4. Forecasting Distribution Assessment  
+**Method:** Continuous Ranked Probability Score (CRPS)
+
+This folder includes the code used to evaluate the probabilistic forecasts generated by the mortality and fertility models. Forecast accuracy is assessed using the Continuous Ranked Probability Score (CRPS), which compares the full predictive distribution with observed outcomes and provides a proper scoring rule for evaluating probabilistic forecasts.
+
