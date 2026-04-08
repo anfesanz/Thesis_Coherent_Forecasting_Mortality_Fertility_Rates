@@ -78,19 +78,23 @@ install.packages(c(
 
 ## Data Sources
 
-| Source | Years | Level | Key information |
-|--------|-------|-------|----------------|
-| National population censuses | 2005, 2018 | Aggregate | Population by age, sex, education (DANE) |
-| Civil registration – births | 1998–2018 | Individual | Birth counts (DANE) |
-| Civil registration – deaths | 1998–2018 | Individual | Death counts (DANE) |
-| DHS (Demographic and Health Surveys) | 1995,2000,2005,2010,2015 | Individual | Fertility, health, nutrition, education (women 13‑49) |
-| ENCV (National Quality of Life Survey) | 1997,1998,2003,2008,2013 | Individual | Poverty, housing, education |
-| ENH (National Household Survey) | 1998 | Individual | Living standards, employment |
-| Eurostat | 2007–2017 | Aggregate | Mortality & population by education (8 countries) |
-| CNMH Victims Database | before 2022 | Individual | Conflict victims by type, with location |
-| WCDE (Wittgenstein Centre) | 1995–2020 | Aggregate | Population estimates by education |
+The methods implemented in this repository were developed using multiple demographic data sources for Colombia, including:
+
+- National population censuses (2005 and 2018) – aggregate population counts by age, sex, and education, provided by DANE.
+- Civil registration and vital statistics – individual birth and death records (1998–2018, yearly counts), also from DANE.
+- Demographic and Health Surveys (DHS) – individual data for women aged 13–49 (1995, 2000, 2005, 2010, 2015) covering fertility, maternal/child health, nutrition, and education.
+- National Quality of Life Survey (ENCV / ECV) – individual data (1997, 1998, 2003, 2008, 2013) on quality of life, poverty, housing, and education.
+- National Household Survey (ENH) – individual data for 1998 (138,586 individuals) on living standards, employment, and education.
+- Eurostat – aggregate mortality and population data by education level (ISCED) for eight countries (DK, EE, FI, NO, SE, SI, SK, TR), covering 2007–2017.
+- National Center for Historical Memory (CNMH) – Victims Database – individual conflict victim records (before 2022) with location information.
+- Wittgenstein Centre Human Capital Data Explorer (WCDE) – aggregate population estimates by education level (1995–2020).
+
+These sources are integrated within the reconstruction and modelling framework to produce consistent demographic series by age, sex, and educational attainment.
 
 ## Citation
 
-Felipe Sanchez Segura (2026). *An Integrated Statistical Framework...* PhD Thesis.  
-Sanchez Segura, Felipe (2025). *Annual Population Reconstruction for Colombia...* Dataset. https://doi.org/10.48410/29309810.v1
+If you use this code or methodology in your research, please cite the following sources:
+
+- Felipe Sanchez Segura (2026). *An Integrated Statistical Framework for Population Reconstruction and Coherent Demographic Forecasting Under Data Constraints*. PhD Thesis / Repository.
+- Sanchez Segura, Felipe (2025). *Annual Population Reconstruction for Colombia by Age, Sex, and Education, 1998–2018*. University of Manchester. Dataset.  
+  https://doi.org/10.48410/29309810.v1
