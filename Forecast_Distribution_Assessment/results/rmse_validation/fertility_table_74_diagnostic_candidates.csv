@@ -1,0 +1,16 @@
+"model","value","reported_table_74","candidate","abs_diff_from_reported"
+"Model A",0.138580195023725,32.11,"correct_holdout_log_asfr",31.9714198049763
+"Model B",0.135580921678488,55.18,"correct_holdout_log_asfr",55.0444190783215
+"Model C",0.0544980160793335,6.77,"correct_holdout_log_asfr",6.71550198392067
+"Model A",0.15290062328904,32.11,"final_year_2018_log_asfr",31.957099376711
+"Model B",0.1690546254296,55.18,"final_year_2018_log_asfr",55.0109453745704
+"Model C",0.0884038479541766,6.77,"final_year_2018_log_asfr",6.68159615204582
+"Model A",0.0688676989128472,32.11,"holdout_rate_asfr",32.0411323010872
+"Model B",0.0582309752325143,55.18,"holdout_rate_asfr",55.1217690247675
+"Model C",0.0172864748734319,6.77,"holdout_rate_asfr",6.75271352512657
+"Model A",0.364284538684555,32.11,"education_specific_tfr",31.7457154613154
+"Model B",0.305238425028948,55.18,"education_specific_tfr",54.8747615749711
+"Model C",0.294617648243154,6.77,"education_specific_tfr",6.47538235175684
+"Model A",0.12461080187344,32.11,"aggregate_tfr",31.9853891981266
+"Model B",0.0314332747066286,55.18,"aggregate_tfr",55.1485667252934
+"Model C",0.0428259822829097,6.77,"aggregate_tfr",6.72717401771709

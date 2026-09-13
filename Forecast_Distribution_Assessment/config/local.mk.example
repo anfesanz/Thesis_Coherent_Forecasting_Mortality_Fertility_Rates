@@ -1,0 +1,7 @@
+# Copy to config/local.mk and set this to the location of the shared data.
+# Do not commit config/local.mk: it is machine-specific.
+DATA_DIR := /path/to/OneDrive/Thesis/Forecast_Distribution_Assessment/data
+
+# Optional: store generated tables and figures outside the repository.
+# OUTPUT_DIR := /path/to/OneDrive/Thesis/Forecast_Distribution_Assessment/outputs
+# RESULTS_DIR := /path/to/OneDrive/Thesis/Forecast_Distribution_Assessment/results

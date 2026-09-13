@@ -1,0 +1,11 @@
+"check","passed"
+"mortality_rmse_equals_sqrt_mse",TRUE
+"fertility_rmse_equals_sqrt_mse",TRUE
+"mortality_same_n_observations_per_model",TRUE
+"fertility_same_n_observations_per_model",TRUE
+"mortality_joins_are_key_based_and_one_to_one",TRUE
+"fertility_joins_are_key_based_and_one_to_one",TRUE
+"mortality_no_duplicate_join_keys",TRUE
+"fertility_no_duplicate_join_keys",TRUE
+"original_table_63_values_not_reused",TRUE
+"original_table_74_values_not_reused",TRUE

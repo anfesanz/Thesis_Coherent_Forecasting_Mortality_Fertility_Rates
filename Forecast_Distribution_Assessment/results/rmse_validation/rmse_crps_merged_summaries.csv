@@ -1,0 +1,676 @@
+"domain","summary_name","outcome","scale","period","model","year","sex","education","age_group","n_observations","mse","rmse","mean_crps"
+"mortality","overall_holdout","mortality_log_rate","log","2014-2018","Model A",,,,,440,,0.0181951508126189,0.00947465791086207
+"mortality","overall_holdout","mortality_log_rate","log","2014-2018","Model B",,,,,440,,12.1615140820329,9.67151396910334
+"mortality","overall_holdout","mortality_log_rate","log","2014-2018","Model C",,,,,440,,6.96147355722666,6.94113688857869
+"mortality","overall_holdout","mortality_log_rate","log","2014-2018","Model D",,,,,440,,6.90815247712035,6.8891631096787
+"mortality","by_year","mortality_log_rate","log","2014-2018","Model A",2014,,,,88,,0.0148185292189052,0.00928082924812525
+"mortality","by_year","mortality_log_rate","log","2014-2018","Model A",2015,,,,88,,0.0146477559729542,0.00903789289498987
+"mortality","by_year","mortality_log_rate","log","2014-2018","Model A",2016,,,,88,,0.0139310379885171,0.00869415488812386
+"mortality","by_year","mortality_log_rate","log","2014-2018","Model A",2017,,,,88,,0.0169521748352145,0.00916309055136275
+"mortality","by_year","mortality_log_rate","log","2014-2018","Model A",2018,,,,88,,0.0271978298975081,0.0111973219717086
+"mortality","by_year","mortality_log_rate","log","2014-2018","Model B",2014,,,,88,,12.1230416017635,9.59931690742382
+"mortality","by_year","mortality_log_rate","log","2014-2018","Model B",2015,,,,88,,11.8032547867326,9.37841825601251
+"mortality","by_year","mortality_log_rate","log","2014-2018","Model B",2016,,,,88,,12.2465579154531,9.764269674785
+"mortality","by_year","mortality_log_rate","log","2014-2018","Model B",2017,,,,88,,12.1973431812739,9.58596668678366
+"mortality","by_year","mortality_log_rate","log","2014-2018","Model B",2018,,,,88,,12.4287489772904,10.0295983205117
+"mortality","by_year","mortality_log_rate","log","2014-2018","Model C",2014,,,,88,,6.93269483577534,6.9114379498762
+"mortality","by_year","mortality_log_rate","log","2014-2018","Model C",2015,,,,88,,6.94394302462889,6.9235777789086
+"mortality","by_year","mortality_log_rate","log","2014-2018","Model C",2016,,,,88,,6.95857813703369,6.93869517153746
+"mortality","by_year","mortality_log_rate","log","2014-2018","Model C",2017,,,,88,,6.97481685053871,6.9551066880117
+"mortality","by_year","mortality_log_rate","log","2014-2018","Model C",2018,,,,88,,6.99714857901342,6.9768668545595
+"mortality","by_year","mortality_log_rate","log","2014-2018","Model D",2014,,,,88,,6.90857269632553,6.88937082001842
+"mortality","by_year","mortality_log_rate","log","2014-2018","Model D",2015,,,,88,,6.90835176000817,6.88922477370671
+"mortality","by_year","mortality_log_rate","log","2014-2018","Model D",2016,,,,88,,6.9079912866882,6.88905021599115
+"mortality","by_year","mortality_log_rate","log","2014-2018","Model D",2017,,,,88,,6.90792717757355,6.88901728522209
+"mortality","by_year","mortality_log_rate","log","2014-2018","Model D",2018,,,,88,,6.90791943986599,6.88915245345512
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model A",,"Female","No Formal Education",,55,0.00173001610595115,0.0415934622981924,0.0196871148192742
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model A",,"Female","Post Secondary",,55,2.96036620073962e-05,0.00544092473825876,0.00901570596467558
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model A",,"Female","Primary",,55,0.00033742672773058,0.0183691787440424,0.00920939410870102
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model A",,"Female","Secondary",,55,0.000116361986173797,0.0107871213107945,0.0080722492714823
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model A",,"Male","No Formal Education",,55,0.000350803977810988,0.0187297618193876,0.0118251616809824
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model A",,"Male","Post Secondary",,55,6.02079578659709e-06,0.00245373099311988,0.00660327463373213
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model A",,"Male","Primary",,55,2.15309423445058e-05,0.00464014464693783,0.00532488232069319
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model A",,"Male","Secondary",,55,5.674390694656e-05,0.00753285516564337,0.00605948048735575
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model B",,"Female","No Formal Education",,55,108.011083052783,10.3928380653594,7.71759298298236
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model B",,"Female","Post Secondary",,55,139.962111240539,11.8305583655438,8.87798898889685
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model B",,"Female","Primary",,55,94.8063520191446,9.73685534549757,8.29864635872596
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model B",,"Female","Secondary",,55,352.96806778924,18.7874444187931,16.1160505542359
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model B",,"Male","No Formal Education",,55,82.8326259234386,9.10124309770037,8.01969849605083
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model B",,"Male","Post Secondary",,55,184.938915629621,13.5992248172321,10.0786056683823
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model B",,"Male","Primary",,55,122.562898821605,11.0708129250568,8.79020726205747
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model B",,"Male","Secondary",,55,97.1373436635112,9.85582790350518,9.473321441495
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model C",,"Female","No Formal Education",,55,47.8349444105659,6.91628111130294,6.88428874082638
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model C",,"Female","Post Secondary",,55,47.712795457828,6.90744492977164,6.88613998874871
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model C",,"Female","Primary",,55,47.5638826829132,6.89665735577122,6.87970869905061
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model C",,"Female","Secondary",,55,47.7685311426494,6.91147821689755,6.89458092359405
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model C",,"Male","No Formal Education",,55,50.0943018993862,7.07773282198376,7.0503245071719
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model C",,"Male","Post Secondary",,55,48.080646129093,6.93402092072796,6.91428805302785
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model C",,"Male","Primary",,55,49.642815677142,7.04576579777827,7.03288189857444
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model C",,"Male","Secondary",,55,48.9989953041499,6.99992823564284,6.98688229763559
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model D",,"Female","No Formal Education",,55,47.7791731500933,6.91224805328145,6.88072288948749
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model D",,"Female","Post Secondary",,55,47.6889664719249,6.90571983734678,6.88447585662491
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model D",,"Female","Primary",,55,47.6459219025314,6.90260254560056,6.88479687613128
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model D",,"Female","Secondary",,55,47.8055851763058,6.91415831293339,6.8976559430497
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model D",,"Male","No Formal Education",,55,47.7503689734317,6.91016417847157,6.88590344936296
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model D",,"Male","Post Secondary",,55,47.6866126090581,6.90554940674948,6.88971114252714
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model D",,"Male","Primary",,55,47.6918282555642,6.90592703810026,6.89358148333368
+"mortality","by_sex_education","mortality_log_rate","log","2014-2018","Model D",,"Male","Secondary",,55,47.7321086382434,6.90884278575243,6.89645723691245
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model A",,,,"Age 01",40,,0.0296698170433696,0.0162729752353057
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model A",,,,"Age 02",40,,0.0308125530355275,0.0159890190400171
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model A",,,,"Age 03",40,,0.0365541964275013,0.0166089711665845
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model A",,,,"Age 04",40,,0.0145361046440482,0.0112510832779408
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model A",,,,"Age 05",40,,0.00674499384983084,0.00902027264674138
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model A",,,,"Age 06",40,,0.00842202154550049,0.00817308258548334
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model A",,,,"Age 07",40,,0.00819109312588287,0.00716284815915876
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model A",,,,"Age 08",40,,0.00607128321480016,0.00629388519733649
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model A",,,,"Age 09",40,,0.00218232611796556,0.00546879812170483
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model A",,,,"Age 10",40,,0.00608368376296891,0.00561137769533616
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model A",,,,"Age 11",40,,0.00152510018190142,0.00236892389387366
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model B",,,,"Age 01",40,,13.587120352933,11.7963952717832
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model B",,,,"Age 02",40,,14.2149934812991,12.306106826582
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model B",,,,"Age 03",40,,10.2960520471381,8.79347928759268
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model B",,,,"Age 04",40,,8.14018824086663,7.39490856453175
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model B",,,,"Age 05",40,,14.9613001392214,10.4765011353322
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model B",,,,"Age 06",40,,15.0598411279155,11.8487112851193
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model B",,,,"Age 07",40,,7.14283465669596,6.24773270694769
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model B",,,,"Age 08",40,,6.88721076403028,5.7532621885583
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model B",,,,"Age 09",40,,13.230036530073,10.2699006023062
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model B",,,,"Age 10",40,,16.6178066130734,14.2217080279032
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model B",,,,"Age 11",40,,8.22806186280754,7.27794776348024
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model C",,,,"Age 01",40,,6.91594848439233,6.8857863163789
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model C",,,,"Age 02",40,,6.94082499782856,6.91249515540195
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model C",,,,"Age 03",40,,6.94402472274165,6.91691712990077
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model C",,,,"Age 04",40,,6.9563854324448,6.93067599159959
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model C",,,,"Age 05",40,,6.97672753135924,6.95443440939846
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model C",,,,"Age 06",40,,6.98846954620767,6.96893393635716
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model C",,,,"Age 07",40,,6.9663734310829,6.94959677421663
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model C",,,,"Age 08",40,,7.00212270456793,6.98595049770661
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model C",,,,"Age 09",40,,6.98576848568775,6.97189511975301
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model C",,,,"Age 10",40,,6.94357420832817,6.92965667279147
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model C",,,,"Age 11",40,,6.95552897522452,6.94616377086106
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model D",,,,"Age 01",40,,6.90622993643535,6.87732724229251
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model D",,,,"Age 02",40,,6.90660791169865,6.87903959521209
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model D",,,,"Age 03",40,,6.90921486524086,6.88274628107117
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model D",,,,"Age 04",40,,6.90838007687892,6.88341914082656
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model D",,,,"Age 05",40,,6.90898201144984,6.88742016560894
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model D",,,,"Age 06",40,,6.9080925296692,6.88990570945241
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model D",,,,"Age 07",40,,6.90888612064666,6.89287277869629
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model D",,,,"Age 08",40,,6.90827605952771,6.89401335582812
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model D",,,,"Age 09",40,,6.9079419428088,6.89475946395272
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model D",,,,"Age 10",40,,6.90887400107308,6.89659932639486
+"mortality","by_age_group","mortality_log_rate","log","2014-2018","Model D",,,,"Age 11",40,,6.90819113613764,6.90269114713005
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2014,"Female","No Formal Education",,11,,0.0280966475598843,0.0160399452049885
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2014,"Female","Post Secondary",,11,,0.00630684176607769,0.00929625551408721
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2014,"Female","Primary",,11,,0.0125215782493363,0.00807570581832761
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2014,"Female","Secondary",,11,,0.0107815152778036,0.00830837686512336
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2014,"Male","No Formal Education",,11,,0.0223553906223784,0.012861599158649
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2014,"Male","Post Secondary",,11,,0.00266802355531831,0.00665533391135341
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2014,"Male","Primary",,11,,0.00520258348625619,0.00560525889197434
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2014,"Male","Secondary",,11,,0.0109787476737375,0.00740415862049853
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2015,"Female","No Formal Education",,11,,0.0318783664765813,0.0172261910836142
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2015,"Female","Post Secondary",,11,,0.00411414218586045,0.00895571205686363
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2015,"Female","Primary",,11,,0.0147655012577147,0.00868790667552056
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2015,"Female","Secondary",,11,,0.0104174963434236,0.00807378547108046
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2015,"Male","No Formal Education",,11,,0.0163143631806778,0.0112183138166411
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2015,"Male","Post Secondary",,11,,0.00250330811713232,0.00646559878502184
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2015,"Male","Primary",,11,,0.00302713251456143,0.00522364222416217
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2015,"Male","Secondary",,11,,0.0086697657965567,0.00645199304701493
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2016,"Female","No Formal Education",,11,,0.03339663719169,0.0175408859833539
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2016,"Female","Post Secondary",,11,,0.00342179220674326,0.00908972048160281
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2016,"Female","Primary",,11,,0.00888084919333663,0.00720830891587035
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2016,"Female","Secondary",,11,,0.00261434667778971,0.00692912982061759
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2016,"Male","No Formal Education",,11,,0.0169553247142557,0.0113115169733825
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2016,"Male","Post Secondary",,11,,0.00170390618675065,0.00653678790722358
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2016,"Male","Primary",,11,,0.00263864677026616,0.00508999068663809
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2016,"Male","Secondary",,11,,0.0065186990800886,0.00584689833630208
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2017,"Female","No Formal Education",,11,,0.0356830834320622,0.017396790869918
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2017,"Female","Post Secondary",,11,,0.00230803261247213,0.0086204234414794
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2017,"Female","Primary",,11,,0.0274807502137281,0.0122528423554029
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2017,"Female","Secondary",,11,,0.0064043910108488,0.00720498086762953
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2017,"Male","No Formal Education",,11,,0.0136817391116564,0.0108032940432232
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2017,"Male","Post Secondary",,11,,0.0019145977320049,0.00645103837151599
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2017,"Male","Primary",,11,,0.00206699247033774,0.00507896492260852
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2017,"Male","Secondary",,11,,0.00539114193777794,0.00549638953912438
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2018,"Female","No Formal Education",,11,,0.0667518603299061,0.0302317609544963
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2018,"Female","Post Secondary",,11,,0.00861859702055958,0.00911641832934485
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2018,"Female","Primary",,11,,0.0218692152283288,0.00982220677838366
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2018,"Female","Secondary",,11,,0.0175839016246883,0.00984497333296054
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2018,"Male","No Formal Education",,11,,0.0226588819649047,0.0129310844130162
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2018,"Male","Post Secondary",,11,,0.00318592167877776,0.00690761419354582
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2018,"Male","Primary",,11,,0.00775818218912649,0.0056265548780828
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model A",2018,"Male","Secondary",,11,,0.00405757885838879,0.00509796289383882
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2014,"Female","No Formal Education",,11,,10.7837701530929,7.89920353302758
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2014,"Female","Post Secondary",,11,,11.697248542062,8.71232433045201
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2014,"Female","Primary",,11,,9.84469535914896,8.69394998910483
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2014,"Female","Secondary",,11,,18.6813782745008,16.0462831542598
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2014,"Male","No Formal Education",,11,,7.41666471872278,6.44569282731038
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2014,"Male","Post Secondary",,11,,12.9386016289771,9.71138762009026
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2014,"Male","Primary",,11,,12.41551378463,9.61983449017258
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2014,"Male","Secondary",,11,,10.0079242656057,9.66585931497315
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2015,"Female","No Formal Education",,11,,10.1028309653414,7.50993872398266
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2015,"Female","Post Secondary",,11,,11.2926705127499,8.31558017059589
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2015,"Female","Primary",,11,,10.0203975555216,8.684111462618
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2015,"Female","Secondary",,11,,18.6045626175521,15.9403234401215
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2015,"Male","No Formal Education",,11,,8.01370320959083,7.20706075769802
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2015,"Male","Post Secondary",,11,,13.843890198504,10.2721295057561
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2015,"Male","Primary",,11,,9.50519183139866,7.88757014959535
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2015,"Male","Secondary",,11,,9.60122198409957,9.21063183773253
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2016,"Female","No Formal Education",,11,,10.4274549857467,7.8610790650165
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2016,"Female","Post Secondary",,11,,11.9301775640608,9.51768344726805
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2016,"Female","Primary",,11,,9.59797067234886,7.98743925598077
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2016,"Female","Secondary",,11,,18.8980510238237,16.151637659141
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2016,"Male","No Formal Education",,11,,9.69868123562561,8.47644344137472
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2016,"Male","Post Secondary",,11,,13.6520859071325,10.1190824020552
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2016,"Male","Primary",,11,,11.1675370331001,8.70248594693085
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2016,"Male","Secondary",,11,,9.71336027256281,9.29830618051298
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2017,"Female","No Formal Education",,11,,10.0977117961118,7.51161152584778
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2017,"Female","Post Secondary",,11,,12.2616320907392,8.94690617691868
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2017,"Female","Primary",,11,,9.46074608182387,7.78489150028618
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2017,"Female","Secondary",,11,,18.8367394501526,16.1747980782534
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2017,"Male","No Formal Education",,11,,10.5152010263854,9.4512543420192
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2017,"Male","Post Secondary",,11,,13.6508121514361,9.83984516478234
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2017,"Male","Primary",,11,,9.76050420359883,7.3102109773087
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2017,"Male","Secondary",,11,,10.0687637544503,9.66821572885302
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2018,"Female","No Formal Education",,11,,10.5357924257175,7.8061320670373
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2018,"Female","Post Secondary",,11,,11.9492161751192,8.89745081924963
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2018,"Female","Primary",,11,,9.75082605518917,8.34283958564002
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2018,"Female","Secondary",,11,,18.9144814602149,16.267210439404
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2018,"Male","No Formal Education",,11,,9.50278404470326,8.51804111185181
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2018,"Male","Post Secondary",,11,,13.889195376154,10.4505836492276
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2018,"Male","Primary",,11,,12.1794710117422,10.4309347462799
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model B",2018,"Male","Secondary",,11,,9.88004733267842,9.52359414540334
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2014,"Female","No Formal Education",,11,,6.91800499404696,6.88677257083976
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2014,"Female","Post Secondary",,11,,6.91125532994745,6.88913450414765
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2014,"Female","Primary",,11,,6.89397832916734,6.87711108318903
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2014,"Female","Secondary",,11,,6.91083256547928,6.89282181949728
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2014,"Male","No Formal Education",,11,,6.98222656886435,6.95291535443357
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2014,"Male","Post Secondary",,11,,6.85393905159315,6.83084727839697
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2014,"Male","Primary",,11,,6.99708503725947,6.98321890872509
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2014,"Male","Secondary",,11,,6.99286113138503,6.97868207978028
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2015,"Female","No Formal Education",,11,,6.91733112020087,6.88580727250955
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2015,"Female","Post Secondary",,11,,6.90979116501235,6.88816751124042
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2015,"Female","Primary",,11,,6.89374564779467,6.87668191281904
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2015,"Female","Secondary",,11,,6.91097615870666,6.89369158876601
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2015,"Male","No Formal Education",,11,,7.01729261258337,6.988640644055
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2015,"Male","Post Secondary",,11,,6.89072454912372,6.87185186252396
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2015,"Male","Primary",,11,,7.0155123964908,7.00256142807603
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2015,"Male","Secondary",,11,,6.99463072171975,6.98122001127874
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2016,"Female","No Formal Education",,11,,6.9162954095359,6.88261689026191
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2016,"Female","Post Secondary",,11,,6.90752679684427,6.88608934324917
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2016,"Female","Primary",,11,,6.89973194568185,6.88294375744576
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2016,"Female","Secondary",,11,,6.9117227577922,6.89515572800846
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2016,"Male","No Formal Education",,11,,7.06455290389003,7.0380196369226
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2016,"Male","Post Secondary",,11,,6.92929365187784,6.91290309475775
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2016,"Male","Primary",,11,,7.03908866007505,7.02649986738753
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2016,"Male","Secondary",,11,,6.99824328381625,6.98533305426646
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2017,"Female","No Formal Education",,11,,6.91565853951549,6.88343149159769
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2017,"Female","Post Secondary",,11,,6.90518451093223,6.88430376563129
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2017,"Female","Primary",,11,,6.89285201034478,6.87572007228439
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2017,"Female","Secondary",,11,,6.91174783755327,6.89517741599733
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2017,"Male","No Formal Education",,11,,7.12495862773742,7.09983735325473
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2017,"Male","Post Secondary",,11,,6.97218865983185,6.9552664003027
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2017,"Male","Primary",,11,,7.06860198267291,7.05605467403679
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2017,"Male","Secondary",,11,,7.00367071414244,6.99106233098869
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2018,"Female","No Formal Education",,11,,6.91411483138156,6.88281547892297
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2018,"Female","Post Secondary",,11,,6.90346387911098,6.88300481947505
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2018,"Female","Primary",,11,,6.90297308384385,6.8860866695148
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2018,"Female","Secondary",,11,,6.91211167794917,6.89605806570119
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2018,"Male","No Formal Education",,11,,7.19754700217565,7.17220954719357
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2018,"Male","Post Secondary",,11,,7.0226875260382,7.00057162915787
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2018,"Male","Primary",,11,,7.10799282694553,7.09607461464674
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model C",2018,"Male","Secondary",,11,,7.01022098461043,6.9981140118638
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2014,"Female","No Formal Education",,11,,6.91571642863452,6.88412157927611
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2014,"Female","Post Secondary",,11,,6.90846460911728,6.88671363596019
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2014,"Female","Primary",,11,,6.90331205058433,6.88577531558214
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2014,"Female","Secondary",,11,,6.91105366117479,6.89402592336618
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2014,"Male","No Formal Education",,11,,6.91050419633755,6.88663144384823
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2014,"Male","Post Secondary",,11,,6.90800865631702,6.89214881135642
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2014,"Male","Primary",,11,,6.90543495109116,6.89258613050526
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2014,"Male","Secondary",,11,,6.90607941918745,6.89296372025289
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2015,"Female","No Formal Education",,11,,6.91431478673235,6.88329091966015
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2015,"Female","Post Secondary",,11,,6.90754927140565,6.88587457246752
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2015,"Female","Primary",,11,,6.90232980702549,6.88452159925179
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2015,"Female","Secondary",,11,,6.91202256910492,6.89484263072618
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2015,"Male","No Formal Education",,11,,6.91035021720434,6.88590767857665
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2015,"Male","Post Secondary",,11,,6.90685286939683,6.89066832510931
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2015,"Male","Primary",,11,,6.90553880293179,6.89330073052993
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2015,"Male","Secondary",,11,,6.90784849353727,6.89539173333217
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2016,"Female","No Formal Education",,11,,6.91159304348624,6.87929954765973
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2016,"Female","Post Secondary",,11,,6.90482147176794,6.88358405795364
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2016,"Female","Primary",,11,,6.90323544268684,6.88554397174409
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2016,"Female","Secondary",,11,,6.91406639817114,6.89767471164268
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2016,"Male","No Formal Education",,11,,6.9095160428209,6.88567258166104
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2016,"Male","Post Secondary",,11,,6.90571634050107,6.89055194261031
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2016,"Male","Primary",,11,,6.9059668184197,6.8935151053622
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2016,"Male","Secondary",,11,,6.90900784670722,6.89655980929556
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2017,"Female","No Formal Education",,11,,6.91129043104085,6.87999349920629
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2017,"Female","Post Secondary",,11,,6.9045784222329,6.88376736635683
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2017,"Female","Primary",,11,,6.90173101549906,6.88341368703171
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2017,"Female","Secondary",,11,,6.9161454027586,6.90026550857015
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2017,"Male","No Formal Education",,11,,6.90967772012618,6.88506686251854
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2017,"Male","Post Secondary",,11,,6.90471975166918,6.88878011994895
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2017,"Male","Primary",,11,,6.90583247572496,6.8936488561177
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2017,"Male","Secondary",,11,,6.90943145591856,6.89720238202656
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2018,"Female","No Formal Education",,11,,6.90832318570803,6.87690890163517
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2018,"Female","Post Secondary",,11,,6.90318400606198,6.88243965038637
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2018,"Female","Primary",,11,,6.90240428347197,6.88472980704667
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2018,"Female","Secondary",,11,,6.91750141219052,6.90147094094331
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2018,"Male","No Formal Education",,11,,6.91077263069305,6.88623868021036
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2018,"Male","Post Secondary",,11,,6.90244810668579,6.88640651361072
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2018,"Male","Primary",,11,,6.90686204982997,6.8948565941533
+"mortality","by_year_sex_education","mortality_log_rate","log","2014-2018","Model D",2018,"Male","Secondary",,11,,6.91184540969549,6.90016853965509
+"mortality","overall_2018","mortality_log_rate","log","2018","Model A",2018,,,,88,,0.0271978298975081,0.0111973219717086
+"mortality","overall_2018","mortality_log_rate","log","2018","Model B",2018,,,,88,,12.4287489772904,10.0295983205117
+"mortality","overall_2018","mortality_log_rate","log","2018","Model C",2018,,,,88,,6.99714857901342,6.9768668545595
+"mortality","overall_2018","mortality_log_rate","log","2018","Model D",2018,,,,88,,6.90791943986599,6.88915245345512
+"fertility","overall_holdout","fertility_log_asfr","log","2014-2018","Model A",,,,,120,,0.138580195023725,0.0415419107900704
+"fertility","overall_holdout","fertility_log_asfr","log","2014-2018","Model B",,,,,120,,0.135580921678488,0.040535856320906
+"fertility","overall_holdout","fertility_log_asfr","log","2014-2018","Model C",,,,,120,,0.0544980160793335,0.0185109242396493
+"fertility","by_year","fertility_log_asfr","log","2014-2018","Model A",2014,,,,24,,0.086623355812739,0.0308424752875476
+"fertility","by_year","fertility_log_asfr","log","2014-2018","Model A",2015,,,,24,,0.115685072406569,0.0393499967995564
+"fertility","by_year","fertility_log_asfr","log","2014-2018","Model A",2016,,,,24,,0.134261330980612,0.0381666813398011
+"fertility","by_year","fertility_log_asfr","log","2014-2018","Model A",2017,,,,24,,0.18366002535999,0.0479028927685613
+"fertility","by_year","fertility_log_asfr","log","2014-2018","Model A",2018,,,,24,,0.15290062328904,0.0514475077548855
+"fertility","by_year","fertility_log_asfr","log","2014-2018","Model B",2014,,,,24,,0.0735351073813511,0.025257127002824
+"fertility","by_year","fertility_log_asfr","log","2014-2018","Model B",2015,,,,24,,0.0975610310285801,0.0336485497390175
+"fertility","by_year","fertility_log_asfr","log","2014-2018","Model B",2016,,,,24,,0.163990421700592,0.0437051791640455
+"fertility","by_year","fertility_log_asfr","log","2014-2018","Model B",2017,,,,24,,0.146673242393815,0.0419222497239322
+"fertility","by_year","fertility_log_asfr","log","2014-2018","Model B",2018,,,,24,,0.1690546254296,0.0581461759747106
+"fertility","by_year","fertility_log_asfr","log","2014-2018","Model C",2014,,,,24,,0.051108487598489,0.0200772702613535
+"fertility","by_year","fertility_log_asfr","log","2014-2018","Model C",2015,,,,24,,0.0322072609654049,0.0161530993304664
+"fertility","by_year","fertility_log_asfr","log","2014-2018","Model C",2016,,,,24,,0.0244787559677695,0.0122095036487617
+"fertility","by_year","fertility_log_asfr","log","2014-2018","Model C",2017,,,,24,,0.0527857347451288,0.0169169936616917
+"fertility","by_year","fertility_log_asfr","log","2014-2018","Model C",2018,,,,24,,0.0884038479541766,0.0271977542959733
+"fertility","by_age_group","fertility_log_asfr","log","2014-2018","Model A",,,,"15-19",20,,0.000712299957512204,0.00212021096510593
+"fertility","by_age_group","fertility_log_asfr","log","2014-2018","Model A",,,,"20-24",20,,0.00176824309857215,0.0024542934846716
+"fertility","by_age_group","fertility_log_asfr","log","2014-2018","Model A",,,,"25-29",20,,0.00335987273958988,0.00307289904307881
+"fertility","by_age_group","fertility_log_asfr","log","2014-2018","Model A",,,,"30-34",20,,0.00797084416320204,0.00588378099024235
+"fertility","by_age_group","fertility_log_asfr","log","2014-2018","Model A",,,,"35-39",20,,0.0457440844135989,0.0263518729008504
+"fertility","by_age_group","fertility_log_asfr","log","2014-2018","Model A",,,,"40-44",20,,0.336237779408647,0.209368407356473
+"fertility","by_age_group","fertility_log_asfr","log","2014-2018","Model B",,,,"15-19",20,,0.000823996294075025,0.00208505997955452
+"fertility","by_age_group","fertility_log_asfr","log","2014-2018","Model B",,,,"20-24",20,,0.00190050521786168,0.00238874991979085
+"fertility","by_age_group","fertility_log_asfr","log","2014-2018","Model B",,,,"25-29",20,,0.00257838011746705,0.00308409645372969
+"fertility","by_age_group","fertility_log_asfr","log","2014-2018","Model B",,,,"30-34",20,,0.00654200796943563,0.00565535945341575
+"fertility","by_age_group","fertility_log_asfr","log","2014-2018","Model B",,,,"35-39",20,,0.0359364957828959,0.0229277842609329
+"fertility","by_age_group","fertility_log_asfr","log","2014-2018","Model B",,,,"40-44",20,,0.330072642622344,0.207074087858012
+"fertility","by_age_group","fertility_log_asfr","log","2014-2018","Model C",,,,"15-19",20,,0.000197656729750796,0.00208681566293959
+"fertility","by_age_group","fertility_log_asfr","log","2014-2018","Model C",,,,"20-24",20,,0.000505063423566866,0.00242494814875908
+"fertility","by_age_group","fertility_log_asfr","log","2014-2018","Model C",,,,"25-29",20,,0.000607365010963932,0.00295119468920123
+"fertility","by_age_group","fertility_log_asfr","log","2014-2018","Model C",,,,"30-34",20,,0.00206911916676837,0.00540506350997193
+"fertility","by_age_group","fertility_log_asfr","log","2014-2018","Model C",,,,"35-39",20,,0.015984199130158,0.0182784621242395
+"fertility","by_age_group","fertility_log_asfr","log","2014-2018","Model C",,,,"40-44",20,,0.132513258257579,0.0799190613027847
+"fertility","by_education","fertility_log_asfr","log","2014-2018","Model A",,,"No Formal Education",,30,,0.219141464320351,0.0779943605996975
+"fertility","by_education","fertility_log_asfr","log","2014-2018","Model A",,,"Post Secondary",,30,,0.0790268944370892,0.0281669337574936
+"fertility","by_education","fertility_log_asfr","log","2014-2018","Model A",,,"Primary",,30,,0.0756604083341122,0.0209250395330764
+"fertility","by_education","fertility_log_asfr","log","2014-2018","Model A",,,"Secondary",,30,,0.129711807454571,0.0390813092700141
+"fertility","by_education","fertility_log_asfr","log","2014-2018","Model B",,,"No Formal Education",,30,,0.215854962966699,0.0732086131742697
+"fertility","by_education","fertility_log_asfr","log","2014-2018","Model B",,,"Post Secondary",,30,,0.0627158589717236,0.0207037601144054
+"fertility","by_education","fertility_log_asfr","log","2014-2018","Model B",,,"Primary",,30,,0.0985489335170736,0.0322534067012245
+"fertility","by_education","fertility_log_asfr","log","2014-2018","Model B",,,"Secondary",,30,,0.115283168725901,0.0359776452937242
+"fertility","by_education","fertility_log_asfr","log","2014-2018","Model C",,,"No Formal Education",,30,,0.0464648181399799,0.0232186782861146
+"fertility","by_education","fertility_log_asfr","log","2014-2018","Model C",,,"Post Secondary",,30,,0.0249577426203554,0.0113775483542668
+"fertility","by_education","fertility_log_asfr","log","2014-2018","Model C",,,"Primary",,30,,0.0933401492036775,0.0281355236480846
+"fertility","by_education","fertility_log_asfr","log","2014-2018","Model C",,,"Secondary",,30,,0.0196439133444201,0.0113119466701314
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2014,,"No Formal Education","15-19",1,,0.000762895083981974,0.00503760686109773
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2014,,"Post Secondary","15-19",1,,0.000264421948935833,0.00114781268986197
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2014,,"Primary","15-19",1,,9.76181792520237e-05,0.00108088473310053
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2014,,"Secondary","15-19",1,,2.53795645894783e-05,0.000997258891793413
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2014,,"No Formal Education","20-24",1,,0.00422257876290599,0.00585598659363729
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2014,,"Post Secondary","20-24",1,,8.73961359078024e-05,0.00126424936498578
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2014,,"Primary","20-24",1,,0.00137995259875501,0.00156130201732316
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2014,,"Secondary","20-24",1,,0.000200561969567747,0.00132228757467176
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2014,,"No Formal Education","25-29",1,,0.00725058541753665,0.00676982270654031
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2014,,"Post Secondary","25-29",1,,0.00106289861319198,0.00168988672338864
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2014,,"Primary","25-29",1,,0.000359173800745793,0.00174431130214368
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2014,,"Secondary","25-29",1,,9.12565586292935e-05,0.00196617463264308
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2014,,"No Formal Education","30-34",1,,0.00482963875333153,0.00937298060178436
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2014,,"Post Secondary","30-34",1,,0.0013240179652092,0.00417653001725442
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2014,,"Primary","30-34",1,,0.00363893160388162,0.00340427376472354
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2014,,"Secondary","30-34",1,,0.00357122945213439,0.00478256078768295
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2014,,"No Formal Education","35-39",1,,0.0114051412480099,0.0197553362096382
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2014,,"Post Secondary","35-39",1,,0.095031441308421,0.0667465520744208
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2014,,"Primary","35-39",1,,0.018441224421521,0.0116765933548816
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2014,,"Secondary","35-39",1,,0.0527037562770725,0.0303987461197307
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2014,,"No Formal Education","40-44",1,,0.299364528264693,0.22689851745245
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2014,,"Post Secondary","40-44",1,,0.218331724360152,0.168976865429368
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2014,,"Primary","40-44",1,,0.169215362521052,0.131996572408614
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2014,,"Secondary","40-44",1,,0.0419602644162698,0.0315962945894057
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2015,,"No Formal Education","15-19",1,,0.0012729267411018,0.0055095896966735
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2015,,"Post Secondary","15-19",1,,0.000235774504359298,0.00117586542300843
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2015,,"Primary","15-19",1,,0.00015593152689064,0.00120606776824273
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2015,,"Secondary","15-19",1,,9.72217933927766e-05,0.00097725221545592
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2015,,"No Formal Education","20-24",1,,0.00251754614098809,0.00576985186853566
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2015,,"Post Secondary","20-24",1,,0.00027078423648863,0.00114772364779306
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2015,,"Primary","20-24",1,,0.000309548004284732,0.00140723521206932
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2015,,"Secondary","20-24",1,,1.34893513075163e-05,0.00122198847916027
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2015,,"No Formal Education","25-29",1,,0.00916425372466634,0.0074335536442718
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2015,,"Post Secondary","25-29",1,,0.000593428669862561,0.00180244590336419
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2015,,"Primary","25-29",1,,4.89283166915655e-06,0.0016959681931559
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2015,,"Secondary","25-29",1,,0.000528159483421664,0.00182612113111562
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2015,,"No Formal Education","30-34",1,,0.00933390514651888,0.0099826130830235
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2015,,"Post Secondary","30-34",1,,0.00191486187078782,0.00373454759445136
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2015,,"Primary","30-34",1,,6.44890175636181e-05,0.00332478665850093
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2015,,"Secondary","30-34",1,,0.0050872208534003,0.00492994242479454
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2015,,"No Formal Education","35-39",1,,0.0804638041564605,0.0493131636424824
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2015,,"Post Secondary","35-39",1,,0.0288835928553327,0.0186444148439549
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2015,,"Primary","35-39",1,,0.0114162527342327,0.00957233776217416
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2015,,"Secondary","35-39",1,,0.0381629717597621,0.0234941502615567
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2015,,"No Formal Education","40-44",1,,0.317078791833705,0.241381500828776
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2015,,"Post Secondary","40-44",1,,0.249126732684417,0.204073937673439
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2015,,"Primary","40-44",1,,0.030248178527132,0.022136095907708
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2015,,"Secondary","40-44",1,,0.385447647335856,0.322638769325646
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2016,,"No Formal Education","15-19",1,,0.00253762125018442,0.00637130507522295
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2016,,"Post Secondary","15-19",1,,0.000238225508979006,0.000985250694573249
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2016,,"Primary","15-19",1,,4.24769184901308e-05,0.00111081987802663
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2016,,"Secondary","15-19",1,,1.22151554320382e-05,0.00100023696356118
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2016,,"No Formal Education","20-24",1,,0.00342634695161115,0.0067949412239779
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2016,,"Post Secondary","20-24",1,,1.60966424429532e-05,0.00112449376330355
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2016,,"Primary","20-24",1,,0.000175160092564575,0.00144862956652509
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2016,,"Secondary","20-24",1,,0.000168078531843197,0.0011836620141247
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2016,,"No Formal Education","25-29",1,,0.00755556128863732,0.00756720140371303
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2016,,"Post Secondary","25-29",1,,0.000243274134240856,0.00154732544285955
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2016,,"Primary","25-29",1,,0.000974247830246799,0.00187446897802586
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2016,,"Secondary","25-29",1,,0.000327977575004024,0.00191827029774162
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2016,,"No Formal Education","30-34",1,,0.00595379680202646,0.0104990561542378
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2016,,"Post Secondary","30-34",1,,0.000663605841979997,0.00396549599649783
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2016,,"Primary","30-34",1,,0.00200061725827894,0.00354489089821751
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2016,,"Secondary","30-34",1,,0.00374904652650554,0.00429523263119338
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2016,,"No Formal Education","35-39",1,,0.0379349025296046,0.0268385047054758
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2016,,"Post Secondary","35-39",1,,0.069854061504247,0.0455174778382416
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2016,,"Primary","35-39",1,,0.0360318899592617,0.0217779009977965
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2016,,"Secondary","35-39",1,,0.0570358918064007,0.0343568450040353
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2016,,"No Formal Education","40-44",1,,0.616194759890541,0.536941243413072
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2016,,"Post Secondary","40-44",1,,0.0612387931287117,0.0364700678007129
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2016,,"Primary","40-44",1,,0.0341053405318887,0.0234782288868804
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2016,,"Secondary","40-44",1,,0.19239722296548,0.135388802527211
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2017,,"No Formal Education","15-19",1,,0.00105648127280844,0.00495128593753248
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2017,,"Post Secondary","15-19",1,,3.89702025209715e-05,0.000996351395216465
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2017,,"Primary","15-19",1,,0.000189441583493988,0.00124055062121841
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2017,,"Secondary","15-19",1,,9.4852998054229e-05,0.000996370701063904
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2017,,"No Formal Education","20-24",1,,0.000143528487632327,0.00538704778351765
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2017,,"Post Secondary","20-24",1,,0.000105308375539792,0.00110191317140652
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2017,,"Primary","20-24",1,,0.000563454485868142,0.00132496379791578
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2017,,"Secondary","20-24",1,,0.000154597737794138,0.00131629175883001
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2017,,"No Formal Education","25-29",1,,0.00480220469824255,0.00638522689329019
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2017,,"Post Secondary","25-29",1,,0.00023375481025667,0.00158364354480466
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2017,,"Primary","25-29",1,,0.00174767784570662,0.00207919506726262
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2017,,"Secondary","25-29",1,,0.000444266015931838,0.00192689166021815
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2017,,"No Formal Education","30-34",1,,0.0143165779194541,0.0115426895088725
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2017,,"Post Secondary","30-34",1,,0.000612361434400022,0.00344559325968701
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2017,,"Primary","30-34",1,,0.000524573370465298,0.00292868066326108
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2017,,"Secondary","30-34",1,,0.00406217209267656,0.00443183157875404
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2017,,"No Formal Education","35-39",1,,0.0130326187837032,0.0211938380301039
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2017,,"Post Secondary","35-39",1,,0.0683879009431259,0.0438614572541804
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2017,,"Primary","35-39",1,,0.000361737254627958,0.00817007398090783
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2017,,"Secondary","35-39",1,,0.0182964239536207,0.0173186247640766
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2017,,"No Formal Education","40-44",1,,0.866866238847886,0.789081620242065
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2017,,"Post Secondary","40-44",1,,0.229443482387422,0.178515670197992
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2017,,"Primary","40-44",1,,0.00293781791855707,0.0166971223674549
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2017,,"Secondary","40-44",1,,0.00156089626164935,0.0231924922658404
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2018,,"No Formal Education","15-19",1,,0.000255555938986962,0.00464693896034248
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2018,,"Post Secondary","15-19",1,,0.000182444838855211,0.000966656560341078
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2018,,"Primary","15-19",1,,0.000118364977323537,0.0010947826158265
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2018,,"Secondary","15-19",1,,4.72881720625651e-05,0.000911331619959035
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2018,,"No Formal Education","20-24",1,,0.004734147751563,0.00581332137880811
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2018,,"Post Secondary","20-24",1,,0.000443202132863085,0.00119256867875996
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2018,,"Primary","20-24",1,,0.00120854763974521,0.00153720393312226
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2018,,"Secondary","20-24",1,,5.21401042004044e-05,0.00131020786496406
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2018,,"No Formal Education","25-29",1,,0.000421774998376812,0.00604721864357249
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2018,,"Post Secondary","25-29",1,,0.00126331592594919,0.00165966709036596
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2018,,"Primary","25-29",1,,0.000805691310544532,0.0019223089046153
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2018,,"Secondary","25-29",1,,0.000573726668113395,0.00201827869848351
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2018,,"No Formal Education","30-34",1,,0.0274631820999942,0.016565677077897
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2018,,"Post Secondary","30-34",1,,0.00190757815778886,0.00361261916203608
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2018,,"Primary","30-34",1,,0.00639422515294408,0.00430013647330799
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2018,,"Secondary","30-34",1,,0.00530355559709683,0.00483548146866927
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2018,,"No Formal Education","35-39",1,,0.0599751995815683,0.0373282337245652
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2018,,"Post Secondary","35-39",1,,0.00341757831601275,0.0118858122371735
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2018,,"Primary","35-39",1,,0.0109882703909612,0.00953620459742227
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2018,,"Secondary","35-39",1,,0.0299174203904803,0.0196511906141901
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2018,,"No Formal Education","40-44",1,,0.325849260932755,0.242794944645748
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2018,,"Post Secondary","40-44",1,,0.0422273155559623,0.0319951172513655
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2018,,"Primary","40-44",1,,0.372904357686335,0.332878594681868
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model A",2018,,"Secondary","40-44",1,,0.555508371647658,0.490235689233849
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2014,,"No Formal Education","15-19",1,,0.00106842457686795,0.0051812280923056
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2014,,"Post Secondary","15-19",1,,4.96299425503111e-05,0.00112440114907063
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2014,,"Primary","15-19",1,,0.000123543832261319,0.00111504810803491
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2014,,"Secondary","15-19",1,,0.0001647144398218,0.00103872551321484
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2014,,"No Formal Education","20-24",1,,0.00380047474229972,0.00542007431223645
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2014,,"Post Secondary","20-24",1,,6.72277799615983e-05,0.00116147115087884
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2014,,"Primary","20-24",1,,0.00081543752075941,0.00138951929133178
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2014,,"Secondary","20-24",1,,0.000199711164217575,0.00136455556232897
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2014,,"No Formal Education","25-29",1,,0.00475019128708309,0.00673962237473234
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2014,,"Post Secondary","25-29",1,,0.000111811553495045,0.00173212292924427
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2014,,"Primary","25-29",1,,0.000733628750206883,0.00175248627127031
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2014,,"Secondary","25-29",1,,0.000460357972909886,0.00211566762153443
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2014,,"No Formal Education","30-34",1,,0.0063802209207453,0.00895797993764887
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2014,,"Post Secondary","30-34",1,,0.000630414293655068,0.00404305159217132
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2014,,"Primary","30-34",1,,0.00168716189598728,0.00302470029808859
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2014,,"Secondary","30-34",1,,0.00331796670006823,0.00465103344448988
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2014,,"No Formal Education","35-39",1,,0.00421887470352178,0.0185311934074973
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2014,,"Post Secondary","35-39",1,,0.0406548756630418,0.0247628425544755
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2014,,"Primary","35-39",1,,0.034221645993101,0.0203593538176996
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2014,,"Secondary","35-39",1,,0.0556115095993365,0.0331217445861356
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2014,,"No Formal Education","40-44",1,,0.153320756871916,0.0962618265314567
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2014,,"Post Secondary","40-44",1,,0.199733061652981,0.141791723595145
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2014,,"Primary","40-44",1,,0.243065501966882,0.193682578966687
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2014,,"Secondary","40-44",1,,0.0356018895461072,0.0268480969600965
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2015,,"No Formal Education","15-19",1,,0.000933811254675732,0.00520792370973466
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2015,,"Post Secondary","15-19",1,,4.86127793548619e-05,0.00109444056251097
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2015,,"Primary","15-19",1,,9.76658883056203e-05,0.00112354116805694
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2015,,"Secondary","15-19",1,,8.14624384410934e-05,0.00107935968090415
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2015,,"No Formal Education","20-24",1,,0.00264375065258537,0.00567540008191281
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2015,,"Post Secondary","20-24",1,,0.000225607616695989,0.00115174419554838
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2015,,"Primary","20-24",1,,0.000619785188214372,0.00140087378673787
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2015,,"Secondary","20-24",1,,1.5939013889632e-05,0.0012939003172443
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2015,,"No Formal Education","25-29",1,,0.00752747958188893,0.00777776624547731
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2015,,"Post Secondary","25-29",1,,9.18035507639914e-05,0.00167532839192933
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2015,,"Primary","25-29",1,,0.000182302475737917,0.0017660198071291
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2015,,"Secondary","25-29",1,,0.000203167775924218,0.00203434521673994
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2015,,"No Formal Education","30-34",1,,0.00947820553074674,0.0111921630739337
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2015,,"Post Secondary","30-34",1,,5.84675367472087e-05,0.00401082902515736
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2015,,"Primary","30-34",1,,0.00213195034209579,0.00343468049160991
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2015,,"Secondary","30-34",1,,0.00362394871863647,0.00407778896547971
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2015,,"No Formal Education","35-39",1,,0.0534555911085486,0.03419363183059
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2015,,"Post Secondary","35-39",1,,0.00706655586290783,0.0143827080916186
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2015,,"Primary","35-39",1,,0.0375198133097108,0.0227033034954272
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2015,,"Secondary","35-39",1,,0.0373189738804856,0.0229187527763548
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2015,,"No Formal Education","40-44",1,,0.140271810682473,0.0868847429092608
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2015,,"Post Secondary","40-44",1,,0.190278898679812,0.140784172279906
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2015,,"Primary","40-44",1,,0.157872170802026,0.113251049659409
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2015,,"Secondary","40-44",1,,0.376496207625618,0.318450727973749
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2016,,"No Formal Education","15-19",1,,0.00253628372462744,0.00506123368675416
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2016,,"Post Secondary","15-19",1,,2.08572375370863e-05,0.00122497166150587
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2016,,"Primary","15-19",1,,1.62898645017506e-05,0.00120321046288528
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2016,,"Secondary","15-19",1,,0.000131576871845063,0.000998149761870658
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2016,,"No Formal Education","20-24",1,,0.00611320313612262,0.00650166149071558
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2016,,"Post Secondary","20-24",1,,2.12672495791821e-06,0.00115908523163206
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2016,,"Primary","20-24",1,,0.000600233873543576,0.00138551138495545
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2016,,"Secondary","20-24",1,,0.000203885212703536,0.00134215835395885
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2016,,"No Formal Education","25-29",1,,0.004482428548652,0.00679284285102567
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2016,,"Post Secondary","25-29",1,,0.000529301280116634,0.00158458557968351
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2016,,"Primary","25-29",1,,5.53874086284267e-05,0.00190520735020109
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2016,,"Secondary","25-29",1,,0.000285948307968464,0.00179047317105244
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2016,,"No Formal Education","30-34",1,,0.00290734429404838,0.0101405317824207
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2016,,"Post Secondary","30-34",1,,6.538665118061e-05,0.00349295454083619
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2016,,"Primary","30-34",1,,0.00297549546459397,0.00374504453226536
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2016,,"Secondary","30-34",1,,0.00345476950723667,0.00447627008562609
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2016,,"No Formal Education","35-39",1,,0.012075572390202,0.0198521264929202
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2016,,"Post Secondary","35-39",1,,0.0432594740893328,0.0259904168070999
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2016,,"Primary","35-39",1,,0.0213517249269538,0.0141885878134325
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2016,,"Secondary","35-39",1,,0.0589167818247138,0.0352709298328695
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2016,,"No Formal Education","40-44",1,,0.776083125602592,0.696344372881439
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2016,,"Post Secondary","40-44",1,,0.0520346607427575,0.0323914877425807
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2016,,"Primary","40-44",1,,0.111087707932827,0.0711251216007972
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2016,,"Secondary","40-44",1,,0.148449612259126,0.100957364838564
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2017,,"No Formal Education","15-19",1,,0.00171715042605936,0.00496678972453364
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2017,,"Post Secondary","15-19",1,,0.000218935603033543,0.00100047509522579
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2017,,"Primary","15-19",1,,0.000137716858154668,0.00119154342155175
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2017,,"Secondary","15-19",1,,0.000185154537069465,0.000958817172098143
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2017,,"No Formal Education","20-24",1,,0.000983047400311854,0.00546988455701889
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2017,,"Post Secondary","20-24",1,,3.63545799180187e-05,0.00104058972033119
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2017,,"Primary","20-24",1,,0.000534579846426464,0.00136765233228065
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2017,,"Secondary","20-24",1,,0.00010143104683058,0.00125282164518745
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2017,,"No Formal Education","25-29",1,,0.0053199295406019,0.00623165322945158
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2017,,"Post Secondary","25-29",1,,0.000344867236949042,0.00174818316768737
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2017,,"Primary","25-29",1,,0.000434951882700929,0.00190959219949115
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2017,,"Secondary","25-29",1,,3.39522978896056e-05,0.00174339820283573
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2017,,"No Formal Education","30-34",1,,0.0114192758552911,0.0106527211747422
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2017,,"Post Secondary","30-34",1,,0.000998778944101275,0.00366615631426779
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2017,,"Primary","30-34",1,,0.00230522789060594,0.00328640956143156
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2017,,"Secondary","30-34",1,,0.00385350338432833,0.00452663052567083
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2017,,"No Formal Education","35-39",1,,0.0337032618542604,0.0244891439132285
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2017,,"Post Secondary","35-39",1,,0.0568117427262394,0.033438786593939
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2017,,"Primary","35-39",1,,0.0317531104715376,0.0194302224951269
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2017,,"Secondary","35-39",1,,0.00853751977316031,0.0163073158894524
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2017,,"No Formal Education","40-44",1,,0.67417786387265,0.593712864179888
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2017,,"Post Secondary","40-44",1,,0.177042146486509,0.125402322575641
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2017,,"Primary","40-44",1,,0.131090753460377,0.089331100936137
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2017,,"Secondary","40-44",1,,0.0874033335425062,0.0530089187471529
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2018,,"No Formal Education","15-19",1,,0.00139574978059143,0.00491140606594765
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2018,,"Post Secondary","15-19",1,,4.52408637867663e-05,0.00113654191446465
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2018,,"Primary","15-19",1,,0.000174120765060515,0.00118058104369339
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2018,,"Secondary","15-19",1,,0.000146463540168895,0.000902811596726816
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2018,,"No Formal Education","20-24",1,,0.0032568920571654,0.00538688465796973
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2018,,"Post Secondary","20-24",1,,0.000123226520473807,0.00113683848682767
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2018,,"Primary","20-24",1,,2.63376065245957e-05,0.00147897940399683
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2018,,"Secondary","20-24",1,,2.545305168411e-05,0.00139539243272316
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2018,,"No Formal Education","25-29",1,,0.00180372820494634,0.00694781063157115
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2018,,"Post Secondary","25-29",1,,0.000268685794543977,0.00161312096079638
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2018,,"Primary","25-29",1,,0.000400594639945684,0.0018942555430898
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2018,,"Secondary","25-29",1,,0.000577797455015627,0.00192744732965086
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2018,,"No Formal Education","30-34",1,,0.0217906694420247,0.0138073412994497
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2018,,"Post Secondary","30-34",1,,0.00057328485954633,0.00362306458699388
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2018,,"Primary","30-34",1,,0.00122748331707445,0.00366814159985749
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2018,,"Secondary","30-34",1,,0.00600031074568719,0.0046296962361738
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2018,,"No Formal Education","35-39",1,,0.0206904589073587,0.0233924194005728
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2018,,"Post Secondary","35-39",1,,0.0274281676856669,0.0184235746088169
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2018,,"Primary","35-39",1,,0.0242615249750464,0.0160958274981512
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2018,,"Secondary","35-39",1,,0.0320692669661715,0.0207028033132495
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2018,,"No Formal Education","40-44",1,,0.540604067090552,0.459573154701653
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2018,,"Post Secondary","40-44",1,,0.0170622334346657,0.0253248123261765
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2018,,"Primary","40-44",1,,0.416136573981928,0.368212056695908
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model B",2018,,"Secondary","40-44",1,,0.465689908249139,0.408143261058592
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2014,,"No Formal Education","15-19",1,,0.000354013649659812,0.0052657812703832
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2014,,"Post Secondary","15-19",1,,9.25478404729674e-05,0.00110966006081762
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2014,,"Primary","15-19",1,,9.35367454157898e-06,0.00107806368300079
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2014,,"Secondary","15-19",1,,6.3367431068162e-05,0.000961070867899189
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2014,,"No Formal Education","20-24",1,,0.000290441273802067,0.00576054019706971
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2014,,"Post Secondary","20-24",1,,0.00012949889135605,0.00118549333286382
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2014,,"Primary","20-24",1,,0.00092082914152325,0.00134385179111895
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2014,,"Secondary","20-24",1,,0.000135470053696185,0.00128540554528577
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2014,,"No Formal Education","25-29",1,,0.000257760195366163,0.00606953099485828
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2014,,"Post Secondary","25-29",1,,0.000229389146385373,0.00166940374034993
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2014,,"Primary","25-29",1,,4.13381274837477e-05,0.00156498671948476
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2014,,"Secondary","25-29",1,,2.3804485785206e-05,0.00210934495546217
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2014,,"No Formal Education","30-34",1,,0.00077111571084254,0.0106730352267101
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2014,,"Post Secondary","30-34",1,,0.00114224926900164,0.00385718703606549
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2014,,"Primary","30-34",1,,0.00456339995823263,0.00368233305899671
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2014,,"Secondary","30-34",1,,5.98021843036811e-05,0.00402551597703468
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2014,,"No Formal Education","35-39",1,,0.0068615881223808,0.0228433979686226
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2014,,"Post Secondary","35-39",1,,0.0224945286794985,0.018493789727751
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2014,,"Primary","35-39",1,,0.0314567218055289,0.0191321342993988
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2014,,"Secondary","35-39",1,,0.0132692319854307,0.0165448821485668
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2014,,"No Formal Education","40-44",1,,0.0463773940987502,0.0723312265058628
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2014,,"Post Secondary","40-44",1,,0.0555147578789352,0.0474400356081063
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2014,,"Primary","40-44",1,,0.232006094766808,0.197371168355832
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2014,,"Secondary","40-44",1,,0.0434470219667902,0.0360566472009416
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2015,,"No Formal Education","15-19",1,,5.83742496607087e-05,0.00519773744221797
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2015,,"Post Secondary","15-19",1,,0.000135374581319958,0.00111894107212602
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2015,,"Primary","15-19",1,,0.000271598813945673,0.00111020080381123
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2015,,"Secondary","15-19",1,,4.56554931105302e-06,0.000920962514034754
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2015,,"No Formal Education","20-24",1,,0.000515033474817184,0.00547063397044782
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2015,,"Post Secondary","20-24",1,,3.65092044880555e-05,0.00109307417586545
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2015,,"Primary","20-24",1,,0.000195632113631827,0.00135547031955326
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2015,,"Secondary","20-24",1,,0.000147168070449233,0.00124360229104557
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2015,,"No Formal Education","25-29",1,,0.000669032521277035,0.00698935261622708
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2015,,"Post Secondary","25-29",1,,4.24669655760823e-05,0.00169012205482757
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2015,,"Primary","25-29",1,,0.000471392726657527,0.0018349675258143
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2015,,"Secondary","25-29",1,,0.000277829634097504,0.00184947746820669
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2015,,"No Formal Education","30-34",1,,0.000207973694716923,0.0101247515411838
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2015,,"Post Secondary","30-34",1,,0.000549147279494733,0.00424094118841402
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2015,,"Primary","30-34",1,,0.0011680919382715,0.00309934063363395
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2015,,"Secondary","30-34",1,,0.00115336113978848,0.00436490538167234
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2015,,"No Formal Education","35-39",1,,0.00188163152445214,0.02757920500304
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2015,,"Post Secondary","35-39",1,,0.0237534410740049,0.0188703233402636
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2015,,"Primary","35-39",1,,0.0266646711399102,0.0159007084126147
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2015,,"Secondary","35-39",1,,0.0166455113660202,0.0186982820401882
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2015,,"No Formal Education","40-44",1,,0.0293647197706473,0.0782752565680606
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2015,,"Post Secondary","40-44",1,,0.104928157332176,0.0603750541090027
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2015,,"Primary","40-44",1,,0.107042667390673,0.0732515162700821
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2015,,"Secondary","40-44",1,,0.00223419316700557,0.0430195571888593
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2016,,"No Formal Education","15-19",1,,0.000532162449526918,0.00576860705506103
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2016,,"Post Secondary","15-19",1,,3.74688777045051e-05,0.00107726293733785
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2016,,"Primary","15-19",1,,0.00020952678134023,0.00113443569294775
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2016,,"Secondary","15-19",1,,3.52793924429662e-05,0.000992928211566016
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2016,,"No Formal Education","20-24",1,,0.00128060537286245,0.00626265500384412
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2016,,"Post Secondary","20-24",1,,1.69062825534638e-05,0.00117255961998592
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2016,,"Primary","20-24",1,,0.00016647293471328,0.00146472663643818
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2016,,"Secondary","20-24",1,,0.000141338372612765,0.00132872218638675
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2016,,"No Formal Education","25-29",1,,0.0010058633272787,0.00660709259459139
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2016,,"Post Secondary","25-29",1,,3.01862516192131e-05,0.00161811905775624
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2016,,"Primary","25-29",1,,0.000990209185750324,0.00213538027275493
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2016,,"Secondary","25-29",1,,7.6443097556389e-05,0.00201216362493778
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2016,,"No Formal Education","30-34",1,,0.000149098221533972,0.0104624516911537
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2016,,"Post Secondary","30-34",1,,0.00100209616388147,0.00379147183245045
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2016,,"Primary","30-34",1,,0.00367963925001469,0.00350578197153234
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2016,,"Secondary","30-34",1,,0.000987828383233191,0.00397643136823393
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2016,,"No Formal Education","35-39",1,,0.000945169323001649,0.0262596561652736
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2016,,"Post Secondary","35-39",1,,0.0187763559114185,0.0181247611658869
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2016,,"Primary","35-39",1,,0.0176649121632404,0.0116864875508326
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2016,,"Secondary","35-39",1,,0.0165777938408399,0.0166508720608476
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2016,,"No Formal Education","40-44",1,,0.0733810430585728,0.0577460482175675
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2016,,"Post Secondary","40-44",1,,0.0544738903982529,0.0408819133459981
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2016,,"Primary","40-44",1,,0.0458352761700693,0.0266829358214732
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2016,,"Secondary","40-44",1,,0.0544802455588385,0.0416846234854237
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2017,,"No Formal Education","15-19",1,,0.000367070866375663,0.00496336940346811
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2017,,"Post Secondary","15-19",1,,4.40743883096673e-05,0.000975331252314437
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2017,,"Primary","15-19",1,,8.62766894433875e-05,0.00114846915645256
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2017,,"Secondary","15-19",1,,0.000190543739128302,0.00101285837946151
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2017,,"No Formal Education","20-24",1,,0.000174250180470015,0.00583680263346772
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2017,,"Post Secondary","20-24",1,,2.23243201391554e-05,0.00116372099092642
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2017,,"Primary","20-24",1,,0.000427720990995528,0.001477121454375
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2017,,"Secondary","20-24",1,,7.789079518572e-05,0.00133113547990704
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2017,,"No Formal Education","25-29",1,,0.00140450456750552,0.00594263909423395
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2017,,"Post Secondary","25-29",1,,1.29592162148029e-05,0.00142675728095044
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2017,,"Primary","25-29",1,,0.00103776486646012,0.00185055841364689
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2017,,"Secondary","25-29",1,,0.000431683175287745,0.00197486192669012
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2017,,"No Formal Education","30-34",1,,9.1160714078331e-05,0.00940235719029465
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2017,,"Post Secondary","30-34",1,,0.00132551224781885,0.00354874259470956
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2017,,"Primary","30-34",1,,0.0018452898378527,0.00340633143752921
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2017,,"Secondary","30-34",1,,0.000606838923356889,0.00386494099442858
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2017,,"No Formal Education","35-39",1,,0.00273566826834509,0.0233046005460116
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2017,,"Post Secondary","35-39",1,,0.0138899075254189,0.0146695643888992
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2017,,"Primary","35-39",1,,0.0134037003594272,0.0104540926721608
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2017,,"Secondary","35-39",1,,0.0144219090370129,0.0186422926888363
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2017,,"No Formal Education","40-44",1,,0.235160139166109,0.156863330701845
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2017,,"Post Secondary","40-44",1,,0.000571226267715108,0.0385013283197722
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2017,,"Primary","40-44",1,,0.0740527126554311,0.0464080993262132
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2017,,"Secondary","40-44",1,,0.0740968980897008,0.0478385415540069
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2018,,"No Formal Education","15-19",1,,5.66445666456694e-05,0.00486355425941264
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2018,,"Post Secondary","15-19",1,,2.5498675303659e-05,0.00106950093485197
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2018,,"Primary","15-19",1,,0.000104227861847939,0.00110942858507565
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2018,,"Secondary","15-19",1,,0.000151479657374054,0.000858149676551456
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2018,,"No Formal Education","20-24",1,,0.000377355611912655,0.00585536181144877
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2018,,"Post Secondary","20-24",1,,0.000143305135985372,0.00106932195833233
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2018,,"Primary","20-24",1,,0.00130131232859565,0.00147744918159926
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2018,,"Secondary","20-24",1,,0.000209062415594374,0.00132131439521964
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2018,,"No Formal Education","25-29",1,,0.000958150044571227,0.00633643735439495
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2018,,"Post Secondary","25-29",1,,8.49148179877801e-05,0.00157102115675715
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2018,,"Primary","25-29",1,,0.000587780895891843,0.00202410293822688
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2018,,"Secondary","25-29",1,,4.26125679546807e-05,0.00174757399385314
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2018,,"No Formal Education","30-34",1,,0.00272187110711242,0.0102828163959298
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2018,,"Post Secondary","30-34",1,,3.92718854334007e-05,0.00365499430718512
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2018,,"Primary","30-34",1,,0.00550465600899441,0.00424255501526188
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2018,,"Secondary","30-34",1,,0.00103250053680704,0.00389438535701827
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2018,,"No Formal Education","35-39",1,,0.00391537542315074,0.028083632024146
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2018,,"Post Secondary","35-39",1,,0.00206825422311285,0.0139025783378841
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2018,,"Primary","35-39",1,,0.00147655100555188,0.00874493349071689
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2018,,"Secondary","35-39",1,,0.01688774020666,0.016983048452848
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2018,,"No Formal Education","40-44",1,,0.031330923203853,0.065138487136609
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2018,,"Post Secondary","40-44",1,,0.00162460763321959,0.0319634756995527
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2018,,"Primary","40-44",1,,0.431546589918983,0.394388077951958
+"fertility","by_year_age_group_education","fertility_log_asfr","log","2014-2018","Model C",2018,,"Secondary","40-44",1,,0.000266656817201838,0.042163902688527
+"fertility","overall_2018","fertility_log_asfr","log","2018","Model A",2018,,,,24,,0.15290062328904,0.0514475077548855
+"fertility","overall_2018","fertility_log_asfr","log","2018","Model B",2018,,,,24,,0.1690546254296,0.0581461759747106
+"fertility","overall_2018","fertility_log_asfr","log","2018","Model C",2018,,,,24,,0.0884038479541766,0.0271977542959733

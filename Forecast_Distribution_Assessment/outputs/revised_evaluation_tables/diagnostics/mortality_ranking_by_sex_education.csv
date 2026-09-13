@@ -1,0 +1,9 @@
+"model","sex","education","n_observations","mse","rmse"
+"Model D","Female","No Formal Education",55,6.35885569730281e-05,0.0079742433479941
+"Model D","Female","Post Secondary",55,1.24785417374024e-05,0.00353249794584546
+"Model D","Female","Primary",55,6.51290466854313e-05,0.00807025691570171
+"Model C","Female","Secondary",55,1.74357486012289e-05,0.00417561355985308
+"Model D","Male","No Formal Education",55,9.53069063059043e-06,0.00308718166465636
+"Model A","Male","Post Secondary",55,6.02079578659709e-06,0.00245373099311988
+"Model D","Male","Primary",55,6.134571394965e-06,0.00247680669309597
+"Model D","Male","Secondary",55,2.25376075978115e-05,0.00474737902403121

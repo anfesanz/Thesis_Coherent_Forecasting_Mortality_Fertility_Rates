@@ -23,8 +23,10 @@ library(scoringRules)
 library(ggplot2)
 library(reshape2)
 
-#Change directory to where the .jls files are located /Users/felipesanchez/Documents/GitHub/thesis/Forecast_Distribution_Assessment/data/mortality/
-setwd("/Users/felipesanchez/Documents/GitHub/thesis/Forecast_Distribution_Assessment/data/")
+# Use the shared data directory configured by Make or FORECAST_ASSESSMENT_DATA_DIR.
+source(file.path(dirname(normalizePath(script_path_from_args <- sub("^--file=", "", commandArgs(trailingOnly = FALSE)[grep("^--file=", commandArgs(trailingOnly = FALSE))][1]), mustWork = FALSE)), "project_paths.R"))
+paths <- project_paths()
+setwd(paths$data_dir)
 
 #Import the csv files- Mortality
 m_model1f1 <- read.csv("mortality/chain_model1f1.csv")
@@ -664,4 +666,3 @@ writeLines(
   table_to_latex_fertility(summary_mean_crps_fertility),
   "summary_mean_crps_fertility.tex"
 )
-

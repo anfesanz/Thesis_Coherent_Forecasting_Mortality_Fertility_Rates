@@ -1,0 +1,5 @@
+"model","education","n_observations","mse","rmse"
+"Model C","No Formal Education",30,0.0021589793247814,0.0464648181399799
+"Model C","Post Secondary",30,0.000622888916703904,0.0249577426203554
+"Model A","Primary",30,0.0057244973892846,0.0756604083341122
+"Model C","Secondary",30,0.000385883331483088,0.0196439133444201
