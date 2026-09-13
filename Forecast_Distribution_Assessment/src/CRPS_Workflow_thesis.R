@@ -1,7 +1,16 @@
-# Complete_CRPS_Workflow.R
-# Demonstrates full pipeline from Julia-like output to CRPS evaluation
-# This Script responds the reviews request to do an assessment of forecast distributions.
-# See Gneiting and Raftery (2004); Gneiting and Raftery (2008).  
+################################################################################
+# Created by          : Felipe Sanchez
+# Contact             : anfesanz@gmail.com
+# Date                : 2025-06-15
+# Language            : R
+# Script Name / Ref.  : CRPS_Workflow_thesis.R
+# Description         : Calculates mean CRPS for mortality and fertility model
+#                       posterior draws to assess forecast distributions.
+# Inputs              : data/mortality/chain_model*.csv and
+#                       data/fertility/chain_model*.csv posterior-draw files.
+# Outputs             : summary_mean_crps.tex and summary_mean_crps_fertility.tex
+#                       in data/, plus printed CRPS summary tables.
+################################################################################
 
 #This are the posterior draws of the models (in Julia)
 #chain_model1f1.jls
@@ -664,4 +673,3 @@ writeLines(
   table_to_latex_fertility(summary_mean_crps_fertility),
   "summary_mean_crps_fertility.tex"
 )
-

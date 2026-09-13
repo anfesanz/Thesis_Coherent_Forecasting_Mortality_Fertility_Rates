@@ -1,3 +1,16 @@
+################################################################################
+# Created by          : Felipe Sanchez
+# Contact             : anfesanz@gmail.com
+# Date                : 2026-09-13
+# Language            : Julia
+# Script Name / Ref.  : Fertility_Julia_to_csv.jl
+# Description         : Converts serialized fertility posterior chains from JLS
+#                       files into CSV files compatible with the R workflows.
+# Inputs              : data/fertility/*.jls and the local Julia compatibility
+#                       environment at .julia/fertility_jls_compat/.
+# Outputs             : CSV copies of each data/fertility/*.jls chain.
+################################################################################
+
 using Pkg
 
 const COMPAT_ENV_DIR = normpath(joinpath(@__DIR__, "..", ".julia", "fertility_jls_compat"))

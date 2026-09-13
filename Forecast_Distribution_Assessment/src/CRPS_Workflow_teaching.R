@@ -1,4 +1,16 @@
-# Complete_CRPS_Workflow.R
+################################################################################
+# Created by          : Felipe Sanchez
+# Contact             : anfesanz@gmail.com
+# Date                : 2025-06-15
+# Language            : R
+# Script Name / Ref.  : CRPS_Workflow_teaching.R
+# Description         : Demonstrates manual and package-based CRPS calculations,
+#                       forecast comparison, and Diebold-Mariano testing.
+# Inputs              : Simulated forecast draws and observations generated
+#                       within this script; no external input files required.
+# Outputs             : crps_summary.csv and crps_results.rds in the current
+#                       working directory; printed CRPS comparison plots.
+################################################################################
 
 library(scoringRules)
 library(ggplot2)

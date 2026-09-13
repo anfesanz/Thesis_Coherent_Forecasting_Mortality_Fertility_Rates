@@ -1,0 +1,9 @@
+# Copy this file to config/local.mk and adapt these locations on each computer.
+# This file is a template; config/local.mk is intentionally machine-specific.
+
+# Optional shared project data mirror.
+DATA_DIR := /path/to/OneDrive/Thesis/Forecast_Distribution_Assessment/data
+
+# Required by `make mortality-holdout-rmse`. Point this at the rerun HPC output
+# directory containing mortality_a, mortality_b, mortality_c, and mortality_d.
+MORTALITY_FORECAST_DIR := /path/to/HPC_thesis/output/evaluation_local_pieces

@@ -1,0 +1,33 @@
+"model","group","crps"
+"Model A","Female: No formal education",0.246529432122785
+"Model B","Female: No formal education",0.238969364469859
+"Model C","Female: No formal education",0.381058019153278
+"Model D","Female: No formal education",0.297620035395664
+"Model A","Female: Post-secondary",0.387889272092214
+"Model B","Female: Post-secondary",0.435718566008642
+"Model C","Female: Post-secondary",0.450973243430115
+"Model D","Female: Post-secondary",0.510891149467139
+"Model A","Female: Primary",0.173885805616502
+"Model B","Female: Primary",0.166764124897238
+"Model C","Female: Primary",0.242177164751161
+"Model D","Female: Primary",0.300230625237728
+"Model A","Female: Secondary",0.202547307300069
+"Model B","Female: Secondary",0.212856890890331
+"Model C","Female: Secondary",0.42207763432186
+"Model D","Female: Secondary",0.33649370399377
+"Model A","Male: No formal education",0.153346306062376
+"Model B","Male: No formal education",0.151869724952963
+"Model C","Male: No formal education",0.381462642757826
+"Model D","Male: No formal education",0.355672663625843
+"Model A","Male: Post-secondary",0.62249660382742
+"Model B","Male: Post-secondary",0.52820432827732
+"Model C","Male: Post-secondary",0.398452876677341
+"Model D","Male: Post-secondary",0.420839299704442
+"Model A","Male: Primary",0.218382257944364
+"Model B","Male: Primary",0.223168812838344
+"Model C","Male: Primary",0.265407941595859
+"Model D","Male: Primary",0.285846518515025
+"Model A","Male: Secondary",0.224645261700406
+"Model B","Male: Secondary",0.208023275805626
+"Model C","Male: Secondary",0.239625695889858
+"Model D","Male: Secondary",0.214784830266714
