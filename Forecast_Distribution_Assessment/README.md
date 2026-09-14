@@ -34,7 +34,7 @@ make fertility-jls-to-csv
 
 `make mortality-holdout-rmse` validates the labelled 2014--2018 posterior
 forecast draws, calculates RMSE, MSE, mean error, and CRPS on log mortality
-rates, and writes publication-ready LaTeX tables to:
+rates, and writes publication-ready LaTeX tables to (tables 6.3 and 6.4 are now in the new doc 4.5 and 4.6):
 
 ```text
 outputs/revised_evaluation_tables/latex/revised_table_6_3_mortality_holdout_rmse.tex
