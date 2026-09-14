@@ -1,8 +1,6 @@
 # Forecast Distribution Assessment
 
-Reproducible scripts for assessing mortality and fertility forecast distributions
-for Felipe Sanchez's thesis. Source scripts use a standard 80-character metadata
-header; use `src/script_header_template.R` when adding an R script.
+Reproducible scripts for assessing mortality and fertility forecast distributions.
 
 ## Requirements
 
